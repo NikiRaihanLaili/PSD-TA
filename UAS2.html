@@ -1,0 +1,3759 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ELECTRIC POWER CONSUMPTION &#8212; Proyek Sain Data - TA</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UAS2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ANALYSIS FOR WHETHER DATASET" href="UAS3.html" />
+    <link rel="prev" title="AIR QUALITY IN YOGYAKARTA" href="UAS1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Proyek Sain Data - TA - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Proyek Sain Data - TA - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UAS1.html">AIR QUALITY IN YOGYAKARTA</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ELECTRIC POWER CONSUMPTION</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="UAS3.html">ANALYSIS FOR WHETHER DATASET</a></li>
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUAS2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UAS2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>ELECTRIC POWER CONSUMPTION</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">ELECTRIC POWER CONSUMPTION</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-mengetahui-konsumsi-tenaga-listrik-di-indonesia">TUJUAN ANALISIS: MENGETAHUI KONSUMSI TENAGA LISTRIK DI INDONESIA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">DATA UNDERSTANDING (MEMAHAMI DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-from-web-to-dataframe">Collecting data from web to dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview-identifikasi-data">Data Overview (Identifikasi Data)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-data">Kualitas Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value">Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-tetangga-terdekat-k-nearest-neighbors-k-nn">1. K-Tetangga Terdekat (K-Nearest Neighbors, K-NN)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jarak-jangkauan-reachability-distance">2. Jarak Jangkauan (Reachability Distance)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kepadatan-jangkauan-lokal-local-reachability-density">3. Kepadatan Jangkauan Lokal (Local Reachability Density)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#faktor-outlier-lokal-local-outlier-factor">4. Faktor Outlier Lokal (Local Outlier Factor)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing-preproses-data">DATA PREPROCESSING (PREPROSES DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-missing-value">Mengatasi Missing Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-sliding-windows">Membuat Sliding Windows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minmax-scaler">MinMax Scaler</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">Data Modelling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-rmse">Rumus RMSE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-mape">Rumus MAPE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regresi">Linear Regresi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svr">SVR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lstm">LSTM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensemble-bagging-dengan-linear-dan-svr">Ensemble Bagging Dengan Linear dan SVR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">KESIMPULAN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployement">DEPLOYEMENT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#website-hasil">WEBSITE HASIL</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="electric-power-consumption">
+<h1>ELECTRIC POWER CONSUMPTION<a class="headerlink" href="#electric-power-consumption" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tujuan-analisis-mengetahui-konsumsi-tenaga-listrik-di-indonesia">
+<h1>TUJUAN ANALISIS: MENGETAHUI KONSUMSI TENAGA LISTRIK DI INDONESIA<a class="headerlink" href="#tujuan-analisis-mengetahui-konsumsi-tenaga-listrik-di-indonesia" title="Link to this heading">#</a></h1>
+<p>Mengetahui komsumsi tenaga listrik menggunakan data univariate dengan menggunakan EPC dataset dari World Bank Open Data
+(<a class="reference external" href="https://datos.bancomundial.org/indicador/EN.GHG.CH4.PI.MT.CE.AR5?end=2022&amp;amp;start=1970">https://datos.bancomundial.org/indicador/EN.GHG.CH4.PI.MT.CE.AR5?end=2022&amp;start=1970</a>)</p>
+<p>Data yang digunakan Univariate hanya memiliki 1 target dan di buat Sliding windows untuk ada fitur dan target</p>
+<p>Komsumsi tenaga listrik di indonesia semakin banyak dari tahun ketahun, listrik di indonesia pertama kali digunakan pada akhir abad ke-19. Semakin berkembang pesat negara indonesia semakin banyak pula komsumsi tenaga listrik yang digunakan dengan begitu, Perusahaan listrik dan penyedia layanan energi dapat memantau pola penggunaan energi dan mengelola distribusi daya secara efisien. Agar tidak adanya kelebihan kosumsi tenaga listrik.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding-memahami-data">
+<h1>DATA UNDERSTANDING (MEMAHAMI DATA)<a class="headerlink" href="#data-understanding-memahami-data" title="Link to this heading">#</a></h1>
+<section id="collecting-data-from-web-to-dataframe">
+<h2>Collecting data from web to dataframe<a class="headerlink" href="#collecting-data-from-web-to-dataframe" title="Link to this heading">#</a></h2>
+<p>Penjelasan teori Attribute dalam data:</p>
+<p>Referensi dari buku yang berjudul “Data Mining Concepts and Techniques” edisi ketiga.</p>
+<p>link : <a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
+<p>Dalam buku tersebut menjelaskan bahwa : Atribut adalah bidang data, yang mewakili karakteristik atau fitur objek data. Kata atribut, dimensi, fitur, dan variabel sering digunakan secara bergantian dalam literatur. Istilah dimensi umumnya digunakan dalam data warehousing. Pembelajaran mesin literatur cenderung menggunakan istilah fitur, sedangkan ahli statistik lebih memilih istilah variabel. Data profesional pertambangan dan basis data biasanya menggunakan istilah atribut, dan kami melakukannya di sini demikian juga. Atribut yang mendeskripsikan objek pelanggan dapat mencakup, misalnya, ID pelanggan, Nama dan alamat. Nilai yang diamati untuk atribut tertentu dikenal sebagai observasi. Satu set Atribut yang digunakan untuk mendeskripsikan objek tertentu disebut vektor atribut (atau vektor fitur). Distribusi data yang melibatkan satu atribut (atau variabel) disebut univariat. Distribusi bivariat melibatkan dua atribut, dan seterusnya.</p>
+<p>Data yang saya ambil dari World Bank Open Data kemudian saya unduh dan mengambil data dari file CSV kemudian di masukan ke dalam Dataframe. Kemudian menampilkan seluruh baris data di dataframe df_main.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">file_path</span> <span class="o">=</span> <span class="s1">&#39;API_EG.USE.ELEC.KH.PC_DS2_en_csv_v2_10750.csv&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">data_indonesia</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indonesia&#39;</span><span class="p">]</span>
+
+<span class="n">data_indonesia</span> <span class="o">=</span> <span class="n">data_indonesia</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Country Code&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Indicator Code&#39;</span><span class="p">])</span>
+
+<span class="n">df_main</span> <span class="o">=</span> <span class="n">data_indonesia</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">)</span>
+
+<span class="n">df_main</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s1">&#39;1960&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="s1">&#39;2019&#39;</span><span class="p">)]</span>
+
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>PowerConsumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1960</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1961</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1962</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1963</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1964</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1965</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1966</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1967</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1968</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1969</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1970</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1971</td>
+      <td>14.296924</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1972</td>
+      <td>15.834851</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1973</td>
+      <td>15.756674</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1974</td>
+      <td>19.109744</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1975</td>
+      <td>21.362178</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1976</td>
+      <td>18.257369</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1977</td>
+      <td>21.637652</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1978</td>
+      <td>31.617483</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1979</td>
+      <td>38.502185</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1980</td>
+      <td>45.945022</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1981</td>
+      <td>52.021824</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1982</td>
+      <td>61.129176</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1983</td>
+      <td>65.772151</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1984</td>
+      <td>71.088896</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1985</td>
+      <td>79.370683</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1986</td>
+      <td>91.642623</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1987</td>
+      <td>103.919821</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1988</td>
+      <td>119.047452</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1989</td>
+      <td>136.943912</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>1990</td>
+      <td>161.857819</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>1991</td>
+      <td>177.216133</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>1992</td>
+      <td>193.489109</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>1993</td>
+      <td>211.868023</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>1994</td>
+      <td>238.800340</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>1995</td>
+      <td>262.016542</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>1996</td>
+      <td>295.028463</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>1997</td>
+      <td>328.381246</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>1998</td>
+      <td>327.718076</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>1999</td>
+      <td>352.990951</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>2000</td>
+      <td>385.757304</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2001</td>
+      <td>406.379299</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>2002</td>
+      <td>412.266143</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>2003</td>
+      <td>423.529446</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>2004</td>
+      <td>468.804367</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>2005</td>
+      <td>495.146211</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>2006</td>
+      <td>510.514726</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>2007</td>
+      <td>540.376925</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>2008</td>
+      <td>564.150417</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>2009</td>
+      <td>588.124475</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>2010</td>
+      <td>630.298386</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>2011</td>
+      <td>674.820738</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>2012</td>
+      <td>728.183349</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>2013</td>
+      <td>769.496767</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>2014</td>
+      <td>808.418972</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>2015</td>
+      <td>910.000000</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>2016</td>
+      <td>956.000000</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>2017</td>
+      <td>1021.000000</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>2018</td>
+      <td>1064.000000</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>2019</td>
+      <td>1084.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="data-overview-identifikasi-data">
+<h2>Data Overview (Identifikasi Data)<a class="headerlink" href="#data-overview-identifikasi-data" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Konsep macam-macam tipe data</p>
+<p>Atribut adalah bidang data, yang mewakili karakteristik atau fitur objek data. Hal ini berarti atribut, dimensi, fitur, dan variabel yang sering digunakan secara bergantian dalam literatur.</p>
+<ul class="simple">
+<li><p>Nominal attributes: berarti atribut yang nilainya berupa simbol atau nama yang merepresentasikan kategori atau status tertentu tanpa urutan yang berarti.</p></li>
+<li><p>Binary attributes: berarti atribut nominal dengan dua kategori atau status, biasanya 0 dan 1.</p></li>
+<li><p>Ordinal attributes: berarti atribut yang nilainya memiliki urutan yang berarti atau ranking, namun selisih antara nilai-nilai tersebut tidak diketahui.</p></li>
+<li><p>Ordinal attributes: berarti atribut yang nilainya memiliki urutan yang berarti atau ranking, namun selisih antara nilai-nilai tersebut tidak diketahui.</p></li>
+</ul>
+<p>Mengamati secara langsung dari data yang diperoleh dari Electric Power Consumption dataset dan mendeskripsikan langsung jumlah kolom, nama kolom, jumlah data, missing values, dan type data dari setiap kolom data tersebut</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 60 entries, 0 to 59
+Data columns (total 2 columns):
+ #   Column            Non-Null Count  Dtype  
+---  ------            --------------  -----  
+ 0   Year              60 non-null     object 
+ 1   PowerConsumption  49 non-null     float64
+dtypes: float64(1), object(1)
+memory usage: 1.4+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Year</p></li>
+<li><p>powerconsumtion kWh per capita</p></li>
+</ul>
+<p>kWh per capita adalah satuan untuk mengukur konsumsi listrik per kapita, yaitu jumlah listrik yang digunakan setiap orang dalam satu tahun</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PowerConsumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>49.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>347.222262</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>320.523152</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>14.296924</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>65.772151</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>262.016542</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>540.376925</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1084.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Dari hasil kode diatas yang merupakan tabel dari dataset, kita bisa menyimpulkan bahwa data ini memiliki 60 baris dan 2 kolom.</p>
+<p>Untuk fitur dari dataset tersebut ada 2 yaitu seperti yang disebutkan diatas: Year. Sedangkan untuk targetnya adalah PowerConsumption.</p>
+<p>Menyimpan Dataframe df_main ke dalam CSV dengan nama komsumsitenagalisrikindonesia</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;komsumsitenagalisrikindonesia.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Melihat Visualisasi grafik time series dari komsumsi tenaga lisrik indonesia dari waktu ke waktu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Tahun&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Tenaga Listrik&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Tren Konsumsi Tenaga Listrik dari Tahun ke Tahun&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Temp\ipykernel_7128\1833379515.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.legend()
+</pre></div>
+</div>
+<img alt="_images/4b731088f10f426ff6c4a315185e2c08b9fac3f415077a769155143fee7fb55c.png" src="_images/4b731088f10f426ff6c4a315185e2c08b9fac3f415077a769155143fee7fb55c.png" />
+</div>
+</div>
+<p>Seperti di lihat pada Visualisasi grafik time series di atas dari tahun ke tahun komsumsi tenaga lisrik terus meningkat</p>
+</section>
+<section id="kualitas-data">
+<h2>Kualitas Data<a class="headerlink" href="#kualitas-data" title="Link to this heading">#</a></h2>
+<section id="missing-value">
+<h3>Missing Value<a class="headerlink" href="#missing-value" title="Link to this heading">#</a></h3>
+<p>Mencari missing value apakah ada missing value di data ini</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_main</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;ffill&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Year                 0
+PowerConsumption    11
+dtype: int64
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Temp\ipykernel_7128\3555172392.py:3: FutureWarning: Series.fillna with &#39;method&#39; is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df_main[&#39;PowerConsumption&#39;] = df_main[&#39;PowerConsumption&#39;].fillna(method=&#39;ffill&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bisa dilihat pada colom PowerConsumption menunjukan adanya missing value di data ini</p>
+</section>
+<section id="outliers">
+<h3>Outliers<a class="headerlink" href="#outliers" title="Link to this heading">#</a></h3>
+<p>Lalu, saya melakukan deteksi outlier, untuk memperbaiki kualitas data.</p>
+<p>Menurut referensi yang didapat dari buku “Data Mining : Concept and Technique”:</p>
+<p>Link:
+<a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
+<p>Local Outlier Factor (LOF) adalah metode deteksi outlier yang didasarkan pada kepadatan lokal suatu titik data dalam kaitannya dengan tetangga terdekatnya. Metode ini bertujuan untuk mengidentifikasi outlier lokal dengan membandingkan kepadatan lokal dari suatu titik dengan kepadatan lokal dari tetangga-tetangganya. Berikut adalah komponen utama dan langkah-langkah perhitungan dalam LOF:</p>
+<section id="k-tetangga-terdekat-k-nearest-neighbors-k-nn">
+<h4>1. K-Tetangga Terdekat (K-Nearest Neighbors, K-NN)<a class="headerlink" href="#k-tetangga-terdekat-k-nearest-neighbors-k-nn" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Jarak K (k-distance)</strong>: Jarak dari titik <span class="math notranslate nohighlight">\( o \)</span> ke tetangga terdekat ke-k.
+$<span class="math notranslate nohighlight">\(
+\text{k-distance}(o) = \text{dist}(o, o_k)
+\)</span><span class="math notranslate nohighlight">\(
+di mana \)</span> o_k <span class="math notranslate nohighlight">\( adalah tetangga terdekat ke-k dari \)</span> o $.</p></li>
+<li><p><strong>Lingkungan Jarak K (k-distance neighborhood)</strong>: Himpunan titik-titik yang berada dalam jarak K dari <span class="math notranslate nohighlight">\( o \)</span>.
+$<span class="math notranslate nohighlight">\(
+N_k(o) = \{ o' \mid \text{dist}(o, o') \leq \text{k-distance}(o) \}
+\)</span>$</p></li>
+</ul>
+</section>
+<section id="jarak-jangkauan-reachability-distance">
+<h4>2. Jarak Jangkauan (Reachability Distance)<a class="headerlink" href="#jarak-jangkauan-reachability-distance" title="Link to this heading">#</a></h4>
+<p>Jarak jangkauan dari titik <span class="math notranslate nohighlight">\( o' \)</span> ke titik <span class="math notranslate nohighlight">\( o \)</span> didefinisikan sebagai:
+$<span class="math notranslate nohighlight">\(
+\text{reachdist}_k(o', o) = \max(\text{k-distance}(o), \text{dist}(o', o))
+\)</span>$</p>
+</section>
+<section id="kepadatan-jangkauan-lokal-local-reachability-density">
+<h4>3. Kepadatan Jangkauan Lokal (Local Reachability Density)<a class="headerlink" href="#kepadatan-jangkauan-lokal-local-reachability-density" title="Link to this heading">#</a></h4>
+<p>Kepadatan jangkauan lokal <span class="math notranslate nohighlight">\( lrd_k(o) \)</span> dari titik <span class="math notranslate nohighlight">\( o \)</span> adalah kebalikan dari rata-rata jarak jangkauan dari tetangga terdekatnya:
+$<span class="math notranslate nohighlight">\(
+lrd_k(o) = \frac{|N_k(o)|}{\sum_{o' \in N_k(o)} \text{reachdist}_k(o', o)}
+\)</span>$</p>
+</section>
+<section id="faktor-outlier-lokal-local-outlier-factor">
+<h4>4. Faktor Outlier Lokal (Local Outlier Factor)<a class="headerlink" href="#faktor-outlier-lokal-local-outlier-factor" title="Link to this heading">#</a></h4>
+<p>Faktor outlier lokal <span class="math notranslate nohighlight">\( LOF_k(o) \)</span> dari titik <span class="math notranslate nohighlight">\( o \)</span> adalah rata-rata dari rasio kepadatan jangkauan lokal <span class="math notranslate nohighlight">\( o \)</span> terhadap kepadatan jangkauan lokal dari tetangga terdekatnya:
+$<span class="math notranslate nohighlight">\(
+LOF_k(o) = \frac{\sum_{o' \in N_k(o)} \frac{lrd_k(o')}{lrd_k(o)}}{|N_k(o)|}
+\)</span>$</p>
+<p>Data outlier sering kali mempengaruhi model data secara umum sehingga pengaruh dari data outlier tersebut harus dikurangi atau dihilangkan. Hal ini merujuk kepda <a class="reference external" href="https://ejurnal.its.ac.id/index.php/sains_seni/article/download/22520/3642">https://ejurnal.its.ac.id/index.php/sains_seni/article/download/22520/3642</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">LocalOutlierFactor</span>
+
+<span class="n">df_main</span> <span class="o">=</span> <span class="n">df_main</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">])</span>
+
+<span class="n">features</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">lof</span> <span class="o">=</span> <span class="n">LocalOutlierFactor</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">contamination</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;LOF_Score&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lof</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>  <span class="c1"># -1 untuk outlier, 1 untuk inlier</span>
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;LOF_Value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">lof</span><span class="o">.</span><span class="n">negative_outlier_factor_</span>  <span class="c1"># Nilai LOF (semakin besar, semakin ekstrem)</span>
+
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;LOF_Score&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data Outlier:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">outliers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DataFrame dengan Skor LOF:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_main</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data Outlier:
+     Year  PowerConsumption  LOF_Score  LOF_Value
+57  2017            1021.0         -1   1.626322
+58  2018            1064.0         -1   1.707245
+59  2019            1084.0         -1   1.744950
+DataFrame dengan Skor LOF:
+    Year  PowerConsumption  LOF_Score  LOF_Value
+11  1971         14.296924          1   0.988635
+12  1972         15.834851          1   0.986796
+13  1973         15.756674          1   0.986888
+14  1974         19.109744          1   0.984552
+15  1975         21.362178          1   0.983664
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Temp\ipykernel_7128\4115913396.py:10: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_main[&#39;LOF_Score&#39;] = lof.fit_predict(features)  # -1 untuk outlier, 1 untuk inlier
+C:\Users\NikiR\AppData\Local\Temp\ipykernel_7128\4115913396.py:11: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_main[&#39;LOF_Value&#39;] = -lof.negative_outlier_factor_  # Nilai LOF (semakin besar, semakin ekstrem)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-preprocessing-preproses-data">
+<h1>DATA PREPROCESSING (PREPROSES DATA)<a class="headerlink" href="#data-preprocessing-preproses-data" title="Link to this heading">#</a></h1>
+<p>Pada data preprocessing kami akan memperbaiki kualitas data karena terdeteksi adanya missing value dan outlier pada data.</p>
+<section id="mengatasi-missing-value">
+<h2>Mengatasi Missing Value<a class="headerlink" href="#mengatasi-missing-value" title="Link to this heading">#</a></h2>
+<p>Terlihat adanya missing value dan disini saya akan hapus missing value, terdapat 11 missing value</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span> <span class="o">=</span> <span class="n">df_main</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>PowerConsumption</th>
+      <th>LOF_Score</th>
+      <th>LOF_Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>11</th>
+      <td>1971</td>
+      <td>14.296924</td>
+      <td>1</td>
+      <td>0.988635</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1972</td>
+      <td>15.834851</td>
+      <td>1</td>
+      <td>0.986796</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1973</td>
+      <td>15.756674</td>
+      <td>1</td>
+      <td>0.986888</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1974</td>
+      <td>19.109744</td>
+      <td>1</td>
+      <td>0.984552</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1975</td>
+      <td>21.362178</td>
+      <td>1</td>
+      <td>0.983664</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1976</td>
+      <td>18.257369</td>
+      <td>1</td>
+      <td>0.984887</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1977</td>
+      <td>21.637652</td>
+      <td>1</td>
+      <td>0.983664</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1978</td>
+      <td>31.617483</td>
+      <td>1</td>
+      <td>0.985857</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1979</td>
+      <td>38.502185</td>
+      <td>1</td>
+      <td>0.988569</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1980</td>
+      <td>45.945022</td>
+      <td>1</td>
+      <td>0.991501</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1981</td>
+      <td>52.021824</td>
+      <td>1</td>
+      <td>0.993895</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1982</td>
+      <td>61.129176</td>
+      <td>1</td>
+      <td>0.997482</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1983</td>
+      <td>65.772151</td>
+      <td>1</td>
+      <td>0.999311</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1984</td>
+      <td>71.088896</td>
+      <td>1</td>
+      <td>1.001406</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1985</td>
+      <td>79.370683</td>
+      <td>1</td>
+      <td>1.004668</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1986</td>
+      <td>91.642623</td>
+      <td>1</td>
+      <td>1.009502</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1987</td>
+      <td>103.919821</td>
+      <td>1</td>
+      <td>0.999112</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1988</td>
+      <td>119.047452</td>
+      <td>1</td>
+      <td>0.988856</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1989</td>
+      <td>136.943912</td>
+      <td>1</td>
+      <td>0.974903</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>1990</td>
+      <td>161.857819</td>
+      <td>1</td>
+      <td>0.965957</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>1991</td>
+      <td>177.216133</td>
+      <td>1</td>
+      <td>0.967154</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>1992</td>
+      <td>193.489109</td>
+      <td>1</td>
+      <td>1.015765</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>1993</td>
+      <td>211.868023</td>
+      <td>1</td>
+      <td>1.068026</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>1994</td>
+      <td>238.800340</td>
+      <td>1</td>
+      <td>1.112596</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>1995</td>
+      <td>262.016542</td>
+      <td>1</td>
+      <td>1.141001</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>1996</td>
+      <td>295.028463</td>
+      <td>1</td>
+      <td>1.138267</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>1997</td>
+      <td>328.381246</td>
+      <td>1</td>
+      <td>1.152912</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>1998</td>
+      <td>327.718076</td>
+      <td>1</td>
+      <td>1.152377</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>1999</td>
+      <td>352.990951</td>
+      <td>1</td>
+      <td>1.155883</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>2000</td>
+      <td>385.757304</td>
+      <td>1</td>
+      <td>1.124120</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2001</td>
+      <td>406.379299</td>
+      <td>1</td>
+      <td>1.143647</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>2002</td>
+      <td>412.266143</td>
+      <td>1</td>
+      <td>1.147826</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>2003</td>
+      <td>423.529446</td>
+      <td>1</td>
+      <td>1.121372</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>2004</td>
+      <td>468.804367</td>
+      <td>1</td>
+      <td>1.116242</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>2005</td>
+      <td>495.146211</td>
+      <td>1</td>
+      <td>1.103437</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>2006</td>
+      <td>510.514726</td>
+      <td>1</td>
+      <td>1.085160</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>2007</td>
+      <td>540.376925</td>
+      <td>1</td>
+      <td>1.101832</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>2008</td>
+      <td>564.150417</td>
+      <td>1</td>
+      <td>1.115704</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>2009</td>
+      <td>588.124475</td>
+      <td>1</td>
+      <td>1.126028</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>2010</td>
+      <td>630.298386</td>
+      <td>1</td>
+      <td>1.153241</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>2011</td>
+      <td>674.820738</td>
+      <td>1</td>
+      <td>1.196724</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>2012</td>
+      <td>728.183349</td>
+      <td>1</td>
+      <td>1.253028</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>2013</td>
+      <td>769.496767</td>
+      <td>1</td>
+      <td>1.282977</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>2014</td>
+      <td>808.418972</td>
+      <td>1</td>
+      <td>1.318265</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>2015</td>
+      <td>910.000000</td>
+      <td>1</td>
+      <td>1.443890</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>2016</td>
+      <td>956.000000</td>
+      <td>1</td>
+      <td>1.515494</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>2017</td>
+      <td>1021.000000</td>
+      <td>-1</td>
+      <td>1.626322</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>2018</td>
+      <td>1064.000000</td>
+      <td>-1</td>
+      <td>1.707245</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>2019</td>
+      <td>1084.000000</td>
+      <td>-1</td>
+      <td>1.744950</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="mengatasi-outlier">
+<h2>Mengatasi Outlier<a class="headerlink" href="#mengatasi-outlier" title="Link to this heading">#</a></h2>
+<p>Karena terdapat outlier di data ini oleh karena itu, 3 data ini akan dihapus yang memiliki nilai LOF -1. Setelah data di hapus data akan semakin berkualitas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;LOF_Score&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DataFrame setelah menghapus outlier:&quot;</span><span class="p">)</span>
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataFrame setelah menghapus outlier:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>PowerConsumption</th>
+      <th>LOF_Score</th>
+      <th>LOF_Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>11</th>
+      <td>1971</td>
+      <td>14.296924</td>
+      <td>1</td>
+      <td>0.988635</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1972</td>
+      <td>15.834851</td>
+      <td>1</td>
+      <td>0.986796</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1973</td>
+      <td>15.756674</td>
+      <td>1</td>
+      <td>0.986888</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1974</td>
+      <td>19.109744</td>
+      <td>1</td>
+      <td>0.984552</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1975</td>
+      <td>21.362178</td>
+      <td>1</td>
+      <td>0.983664</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1976</td>
+      <td>18.257369</td>
+      <td>1</td>
+      <td>0.984887</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1977</td>
+      <td>21.637652</td>
+      <td>1</td>
+      <td>0.983664</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1978</td>
+      <td>31.617483</td>
+      <td>1</td>
+      <td>0.985857</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1979</td>
+      <td>38.502185</td>
+      <td>1</td>
+      <td>0.988569</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1980</td>
+      <td>45.945022</td>
+      <td>1</td>
+      <td>0.991501</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1981</td>
+      <td>52.021824</td>
+      <td>1</td>
+      <td>0.993895</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1982</td>
+      <td>61.129176</td>
+      <td>1</td>
+      <td>0.997482</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1983</td>
+      <td>65.772151</td>
+      <td>1</td>
+      <td>0.999311</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1984</td>
+      <td>71.088896</td>
+      <td>1</td>
+      <td>1.001406</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1985</td>
+      <td>79.370683</td>
+      <td>1</td>
+      <td>1.004668</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1986</td>
+      <td>91.642623</td>
+      <td>1</td>
+      <td>1.009502</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1987</td>
+      <td>103.919821</td>
+      <td>1</td>
+      <td>0.999112</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1988</td>
+      <td>119.047452</td>
+      <td>1</td>
+      <td>0.988856</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>1989</td>
+      <td>136.943912</td>
+      <td>1</td>
+      <td>0.974903</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>1990</td>
+      <td>161.857819</td>
+      <td>1</td>
+      <td>0.965957</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>1991</td>
+      <td>177.216133</td>
+      <td>1</td>
+      <td>0.967154</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>1992</td>
+      <td>193.489109</td>
+      <td>1</td>
+      <td>1.015765</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>1993</td>
+      <td>211.868023</td>
+      <td>1</td>
+      <td>1.068026</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>1994</td>
+      <td>238.800340</td>
+      <td>1</td>
+      <td>1.112596</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>1995</td>
+      <td>262.016542</td>
+      <td>1</td>
+      <td>1.141001</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>1996</td>
+      <td>295.028463</td>
+      <td>1</td>
+      <td>1.138267</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>1997</td>
+      <td>328.381246</td>
+      <td>1</td>
+      <td>1.152912</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>1998</td>
+      <td>327.718076</td>
+      <td>1</td>
+      <td>1.152377</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>1999</td>
+      <td>352.990951</td>
+      <td>1</td>
+      <td>1.155883</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>2000</td>
+      <td>385.757304</td>
+      <td>1</td>
+      <td>1.124120</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2001</td>
+      <td>406.379299</td>
+      <td>1</td>
+      <td>1.143647</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>2002</td>
+      <td>412.266143</td>
+      <td>1</td>
+      <td>1.147826</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>2003</td>
+      <td>423.529446</td>
+      <td>1</td>
+      <td>1.121372</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>2004</td>
+      <td>468.804367</td>
+      <td>1</td>
+      <td>1.116242</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>2005</td>
+      <td>495.146211</td>
+      <td>1</td>
+      <td>1.103437</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>2006</td>
+      <td>510.514726</td>
+      <td>1</td>
+      <td>1.085160</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>2007</td>
+      <td>540.376925</td>
+      <td>1</td>
+      <td>1.101832</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>2008</td>
+      <td>564.150417</td>
+      <td>1</td>
+      <td>1.115704</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>2009</td>
+      <td>588.124475</td>
+      <td>1</td>
+      <td>1.126028</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>2010</td>
+      <td>630.298386</td>
+      <td>1</td>
+      <td>1.153241</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>2011</td>
+      <td>674.820738</td>
+      <td>1</td>
+      <td>1.196724</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>2012</td>
+      <td>728.183349</td>
+      <td>1</td>
+      <td>1.253028</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>2013</td>
+      <td>769.496767</td>
+      <td>1</td>
+      <td>1.282977</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>2014</td>
+      <td>808.418972</td>
+      <td>1</td>
+      <td>1.318265</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>2015</td>
+      <td>910.000000</td>
+      <td>1</td>
+      <td>1.443890</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>2016</td>
+      <td>956.000000</td>
+      <td>1</td>
+      <td>1.515494</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="membuat-sliding-windows">
+<h2>Membuat Sliding Windows<a class="headerlink" href="#membuat-sliding-windows" title="Link to this heading">#</a></h2>
+<p>Sliding windows untuk membuat data time series ke supervies biar ada target jadi punya fitur dan target. Dengan sliding window, data diproses menjadi serangkaian input-output berurutan yang dapat digunakan untuk pelatihan model prediktif.</p>
+<p>DataFrame supervised_df akan berisi kolom lag_1, lag_2, lag_3 sebagai fitur input dan PowerConsumption sebagai target.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_supervised_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">-</span> <span class="n">window_size</span><span class="p">):</span>
+        <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">window_size</span><span class="p">])</span>
+        <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">window_size</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="n">PowerConsumption_values</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#df_cleaned</span>
+
+<span class="n">window_size</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">create_supervised_data</span><span class="p">(</span><span class="n">PowerConsumption_values</span><span class="p">,</span> <span class="n">window_size</span><span class="p">)</span>
+
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;lag_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">window_size</span><span class="p">)]</span>  
+<span class="n">supervised_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">supervised_df</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span>
+
+<span class="n">supervised_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>lag_1</th>
+      <th>lag_2</th>
+      <th>lag_3</th>
+      <th>PowerConsumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>14.296924</td>
+      <td>15.834851</td>
+      <td>15.756674</td>
+      <td>19.109744</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>15.834851</td>
+      <td>15.756674</td>
+      <td>19.109744</td>
+      <td>21.362178</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15.756674</td>
+      <td>19.109744</td>
+      <td>21.362178</td>
+      <td>18.257369</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>19.109744</td>
+      <td>21.362178</td>
+      <td>18.257369</td>
+      <td>21.637652</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>21.362178</td>
+      <td>18.257369</td>
+      <td>21.637652</td>
+      <td>31.617483</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>18.257369</td>
+      <td>21.637652</td>
+      <td>31.617483</td>
+      <td>38.502185</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>21.637652</td>
+      <td>31.617483</td>
+      <td>38.502185</td>
+      <td>45.945022</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>31.617483</td>
+      <td>38.502185</td>
+      <td>45.945022</td>
+      <td>52.021824</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>38.502185</td>
+      <td>45.945022</td>
+      <td>52.021824</td>
+      <td>61.129176</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>45.945022</td>
+      <td>52.021824</td>
+      <td>61.129176</td>
+      <td>65.772151</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>52.021824</td>
+      <td>61.129176</td>
+      <td>65.772151</td>
+      <td>71.088896</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>61.129176</td>
+      <td>65.772151</td>
+      <td>71.088896</td>
+      <td>79.370683</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>65.772151</td>
+      <td>71.088896</td>
+      <td>79.370683</td>
+      <td>91.642623</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>71.088896</td>
+      <td>79.370683</td>
+      <td>91.642623</td>
+      <td>103.919821</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>79.370683</td>
+      <td>91.642623</td>
+      <td>103.919821</td>
+      <td>119.047452</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>91.642623</td>
+      <td>103.919821</td>
+      <td>119.047452</td>
+      <td>136.943912</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>103.919821</td>
+      <td>119.047452</td>
+      <td>136.943912</td>
+      <td>161.857819</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>119.047452</td>
+      <td>136.943912</td>
+      <td>161.857819</td>
+      <td>177.216133</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>136.943912</td>
+      <td>161.857819</td>
+      <td>177.216133</td>
+      <td>193.489109</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>161.857819</td>
+      <td>177.216133</td>
+      <td>193.489109</td>
+      <td>211.868023</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>177.216133</td>
+      <td>193.489109</td>
+      <td>211.868023</td>
+      <td>238.800340</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>193.489109</td>
+      <td>211.868023</td>
+      <td>238.800340</td>
+      <td>262.016542</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>211.868023</td>
+      <td>238.800340</td>
+      <td>262.016542</td>
+      <td>295.028463</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>238.800340</td>
+      <td>262.016542</td>
+      <td>295.028463</td>
+      <td>328.381246</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>262.016542</td>
+      <td>295.028463</td>
+      <td>328.381246</td>
+      <td>327.718076</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>295.028463</td>
+      <td>328.381246</td>
+      <td>327.718076</td>
+      <td>352.990951</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>328.381246</td>
+      <td>327.718076</td>
+      <td>352.990951</td>
+      <td>385.757304</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>327.718076</td>
+      <td>352.990951</td>
+      <td>385.757304</td>
+      <td>406.379299</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>352.990951</td>
+      <td>385.757304</td>
+      <td>406.379299</td>
+      <td>412.266143</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>385.757304</td>
+      <td>406.379299</td>
+      <td>412.266143</td>
+      <td>423.529446</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>406.379299</td>
+      <td>412.266143</td>
+      <td>423.529446</td>
+      <td>468.804367</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>412.266143</td>
+      <td>423.529446</td>
+      <td>468.804367</td>
+      <td>495.146211</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>423.529446</td>
+      <td>468.804367</td>
+      <td>495.146211</td>
+      <td>510.514726</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>468.804367</td>
+      <td>495.146211</td>
+      <td>510.514726</td>
+      <td>540.376925</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>495.146211</td>
+      <td>510.514726</td>
+      <td>540.376925</td>
+      <td>564.150417</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>510.514726</td>
+      <td>540.376925</td>
+      <td>564.150417</td>
+      <td>588.124475</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>540.376925</td>
+      <td>564.150417</td>
+      <td>588.124475</td>
+      <td>630.298386</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>564.150417</td>
+      <td>588.124475</td>
+      <td>630.298386</td>
+      <td>674.820738</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>588.124475</td>
+      <td>630.298386</td>
+      <td>674.820738</td>
+      <td>728.183349</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>630.298386</td>
+      <td>674.820738</td>
+      <td>728.183349</td>
+      <td>769.496767</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>674.820738</td>
+      <td>728.183349</td>
+      <td>769.496767</td>
+      <td>808.418972</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>728.183349</td>
+      <td>769.496767</td>
+      <td>808.418972</td>
+      <td>910.000000</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>769.496767</td>
+      <td>808.418972</td>
+      <td>910.000000</td>
+      <td>956.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Bisa dilihat di bawah adalah grafik visualisasi data supervised dari hasil sliding window, dengan menampilkan nilai lag (lag_1, lag_2, lag_3) dan nilai target (PowerConsumption).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">supervised_df</span><span class="p">[</span><span class="s1">&#39;lag_1&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Lag 1&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">supervised_df</span><span class="p">[</span><span class="s1">&#39;lag_2&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Lag 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">supervised_df</span><span class="p">[</span><span class="s1">&#39;lag_3&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Lag 3&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">supervised_df</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Supervised Data: Sliding Window Input vs Target&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Value&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fe506a36a74bfac9dbb81b136a8f8d5466f9f4666881700c67250959608aa6c4.png" src="_images/fe506a36a74bfac9dbb81b136a8f8d5466f9f4666881700c67250959608aa6c4.png" />
+</div>
+</div>
+<p>Mengamati secara langsung data yang sudah di sliding windows mendeskripsikan langsung dari type data dari fitur dan target data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">supervised_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 43 entries, 0 to 42
+Data columns (total 4 columns):
+ #   Column            Non-Null Count  Dtype  
+---  ------            --------------  -----  
+ 0   lag_1             43 non-null     float64
+ 1   lag_2             43 non-null     float64
+ 2   lag_3             43 non-null     float64
+ 3   PowerConsumption  43 non-null     float64
+dtypes: float64(4)
+memory usage: 1.5 KB
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="normalisasi-data">
+<h2>Normalisasi Data<a class="headerlink" href="#normalisasi-data" title="Link to this heading">#</a></h2>
+<p>Normalisasi data adalah teknik untuk mengubah skala data yang memiliki dimensi berbeda-beda menjadi skala yang seragam, yaitu antara 0–1</p>
+<section id="minmax-scaler">
+<h3>MinMax Scaler<a class="headerlink" href="#minmax-scaler" title="Link to this heading">#</a></h3>
+<p>MinMax Scaler dilakukan agar rentang setiap sampel pada suatu fitur tidak terlalu besar.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="n">data_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">supervised_df</span><span class="p">)</span>
+
+<span class="n">data_scaled_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_scaled</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">supervised_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Normalisasi dengan Min-Max Scaling:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data_scaled_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">data_scaled_df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data_scaled_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">data_scaled_df</span><span class="p">[</span><span class="n">column</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">column</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Sliding Window Data After Min-Max Scaling&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Scaled Value (0-1)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">supervised_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Normalisasi dengan Min-Max Scaling:
+      lag_1     lag_2     lag_3  PowerConsumption
+0  0.000000  0.000099  0.000000          0.000909
+1  0.002036  0.000000  0.003750          0.003311
+2  0.001933  0.004230  0.006268          0.000000
+3  0.006373  0.007072  0.002796          0.003605
+4  0.009355  0.003155  0.006576          0.014247
+</pre></div>
+</div>
+<img alt="_images/8bd4d7f8751c3a2df1d99eb2f1dd9d64495833d946847bf69aab812a27a0fe34.png" src="_images/8bd4d7f8751c3a2df1d99eb2f1dd9d64495833d946847bf69aab812a27a0fe34.png" />
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>lag_1</th>
+      <th>lag_2</th>
+      <th>lag_3</th>
+      <th>PowerConsumption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>14.296924</td>
+      <td>15.834851</td>
+      <td>15.756674</td>
+      <td>19.109744</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>15.834851</td>
+      <td>15.756674</td>
+      <td>19.109744</td>
+      <td>21.362178</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15.756674</td>
+      <td>19.109744</td>
+      <td>21.362178</td>
+      <td>18.257369</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>19.109744</td>
+      <td>21.362178</td>
+      <td>18.257369</td>
+      <td>21.637652</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>21.362178</td>
+      <td>18.257369</td>
+      <td>21.637652</td>
+      <td>31.617483</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>18.257369</td>
+      <td>21.637652</td>
+      <td>31.617483</td>
+      <td>38.502185</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>21.637652</td>
+      <td>31.617483</td>
+      <td>38.502185</td>
+      <td>45.945022</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>31.617483</td>
+      <td>38.502185</td>
+      <td>45.945022</td>
+      <td>52.021824</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>38.502185</td>
+      <td>45.945022</td>
+      <td>52.021824</td>
+      <td>61.129176</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>45.945022</td>
+      <td>52.021824</td>
+      <td>61.129176</td>
+      <td>65.772151</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>52.021824</td>
+      <td>61.129176</td>
+      <td>65.772151</td>
+      <td>71.088896</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>61.129176</td>
+      <td>65.772151</td>
+      <td>71.088896</td>
+      <td>79.370683</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>65.772151</td>
+      <td>71.088896</td>
+      <td>79.370683</td>
+      <td>91.642623</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>71.088896</td>
+      <td>79.370683</td>
+      <td>91.642623</td>
+      <td>103.919821</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>79.370683</td>
+      <td>91.642623</td>
+      <td>103.919821</td>
+      <td>119.047452</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>91.642623</td>
+      <td>103.919821</td>
+      <td>119.047452</td>
+      <td>136.943912</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>103.919821</td>
+      <td>119.047452</td>
+      <td>136.943912</td>
+      <td>161.857819</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>119.047452</td>
+      <td>136.943912</td>
+      <td>161.857819</td>
+      <td>177.216133</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>136.943912</td>
+      <td>161.857819</td>
+      <td>177.216133</td>
+      <td>193.489109</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>161.857819</td>
+      <td>177.216133</td>
+      <td>193.489109</td>
+      <td>211.868023</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>177.216133</td>
+      <td>193.489109</td>
+      <td>211.868023</td>
+      <td>238.800340</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>193.489109</td>
+      <td>211.868023</td>
+      <td>238.800340</td>
+      <td>262.016542</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>211.868023</td>
+      <td>238.800340</td>
+      <td>262.016542</td>
+      <td>295.028463</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>238.800340</td>
+      <td>262.016542</td>
+      <td>295.028463</td>
+      <td>328.381246</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>262.016542</td>
+      <td>295.028463</td>
+      <td>328.381246</td>
+      <td>327.718076</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>295.028463</td>
+      <td>328.381246</td>
+      <td>327.718076</td>
+      <td>352.990951</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>328.381246</td>
+      <td>327.718076</td>
+      <td>352.990951</td>
+      <td>385.757304</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>327.718076</td>
+      <td>352.990951</td>
+      <td>385.757304</td>
+      <td>406.379299</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>352.990951</td>
+      <td>385.757304</td>
+      <td>406.379299</td>
+      <td>412.266143</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>385.757304</td>
+      <td>406.379299</td>
+      <td>412.266143</td>
+      <td>423.529446</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>406.379299</td>
+      <td>412.266143</td>
+      <td>423.529446</td>
+      <td>468.804367</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>412.266143</td>
+      <td>423.529446</td>
+      <td>468.804367</td>
+      <td>495.146211</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>423.529446</td>
+      <td>468.804367</td>
+      <td>495.146211</td>
+      <td>510.514726</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>468.804367</td>
+      <td>495.146211</td>
+      <td>510.514726</td>
+      <td>540.376925</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>495.146211</td>
+      <td>510.514726</td>
+      <td>540.376925</td>
+      <td>564.150417</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>510.514726</td>
+      <td>540.376925</td>
+      <td>564.150417</td>
+      <td>588.124475</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>540.376925</td>
+      <td>564.150417</td>
+      <td>588.124475</td>
+      <td>630.298386</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>564.150417</td>
+      <td>588.124475</td>
+      <td>630.298386</td>
+      <td>674.820738</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>588.124475</td>
+      <td>630.298386</td>
+      <td>674.820738</td>
+      <td>728.183349</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>630.298386</td>
+      <td>674.820738</td>
+      <td>728.183349</td>
+      <td>769.496767</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>674.820738</td>
+      <td>728.183349</td>
+      <td>769.496767</td>
+      <td>808.418972</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>728.183349</td>
+      <td>769.496767</td>
+      <td>808.418972</td>
+      <td>910.000000</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>769.496767</td>
+      <td>808.418972</td>
+      <td>910.000000</td>
+      <td>956.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="data-modelling">
+<h2>Data Modelling<a class="headerlink" href="#data-modelling" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span> <span class="c1"># type: ignore</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="n">LSTM</span><span class="p">,</span> <span class="n">Dense</span> <span class="c1"># type: ignore</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>x: sebagai fitur</p></li>
+<li><p>y: sebagai target</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">supervised_df</span><span class="p">[[</span><span class="s1">&#39;lag_1&#39;</span><span class="p">,</span> <span class="s1">&#39;lag_2&#39;</span><span class="p">,</span> <span class="s1">&#39;lag_3&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">supervised_df</span><span class="p">[</span><span class="s1">&#39;PowerConsumption&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>X_train: data latih</p></li>
+<li><p>X_test: data tes</p></li>
+<li><p>y_train: variabel latih</p></li>
+<li><p>y_test: variabel uji.</p></li>
+</ul>
+<p>rule of thumb ad 5:</p>
+<ul class="simple">
+<li><p>90:10, 80:20, 70:30, 60:40 dan 50:50</p></li>
+</ul>
+<p>menjadi rasio yang mendapatkan nilai eror terendah dari  RMSE, MSE, MAPE dan MAE</p>
+<ul class="simple">
+<li><p>80:20, 70:30 dan 60:40</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="rumus-rmse">
+<h3>Rumus RMSE<a class="headerlink" href="#rumus-rmse" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[ \text{RMSE} = \sqrt{\frac{1}{n} \sum\_{i=1}^{n} \left( y_i - \hat{y}\_i \right)^2} \]</div>
+<p>Keterangan:
+RMSE = nilai root mean square error</p>
+<ul class="simple">
+<li><p>y  = nilai hasil observasi</p></li>
+<li><p>ŷ  = nilai hasil prediksi</p></li>
+<li><p>i  = urutan data pada database</p></li>
+<li><p>n  = jumlah data</p></li>
+</ul>
+<p>RMSE adalah:</p>
+<ul class="simple">
+<li><p>RMSE adalah standar deviasi dari residual</p></li>
+<li><p>RMSE menunjukkan kesalahan prediksi model rata-rata</p></li>
+<li><p>Nilai yang lebih rendah menunjukkan model yang lebih baik</p></li>
+<li><p>RMSE diukur dalam unit yang sama dengan variabel model</p></li>
+</ul>
+</section>
+<section id="rumus-mape">
+<h3>Rumus MAPE<a class="headerlink" href="#rumus-mape" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\text{MAPE} = \frac{100}{n} \times \sum \frac{\left|actual-forecast\right|}{actual}\]</div>
+<p>Keterangan: MAPE = mean absolute percentage error</p>
+<ul class="simple">
+<li><p>n  = jumlah data</p></li>
+<li><p>y  = nilai hasil aktual</p></li>
+<li><p>ŷ  = nilai hasil pendugaan</p></li>
+</ul>
+<p>Mean Absolut Percentage error (MAPE) adalah persentase kesalahan rata-rata secara mutlak (absolut). Pengertian Mean Absolute Percentage Error adalah Pengukuran statistik tentang akurasi perkiraan (prediksi) pada metode peramalan. Pengukuran dengan menggunakan Mean Absolute Percentage Error (MAPE) dapat digunakan oleh masyarakat luas karena MAPE mudah dipahami dan diterapkan dalam memprediksi akurasi peramalan.</p>
+</section>
+<section id="linear-regresi">
+<h3>Linear Regresi<a class="headerlink" href="#linear-regresi" title="Link to this heading">#</a></h3>
+<p>teknik analisis data yang memprediksi nilai data yang tidak diketahui dengan menggunakan nilai data lain yang terkait dan diketahui</p>
+<p>regresi digunakan untuk memprediksi hubungan antar variabel, yaitu variabel dependen(terikat) dan independen. Variabel independen adalah variabel yang memberikan pengaruh, sedangkan variabel dependen adalah variabel yang dipengaruhi oleh variabel independen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lr_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">lr_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred_lr</span> <span class="o">=</span> <span class="n">lr_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">rmse_lr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_lr</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE - Linear Regression: </span><span class="si">{</span><span class="n">rmse_lr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">absolute_percentage_errors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred_lr</span><span class="p">)</span> <span class="o">/</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">mape_manual</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">absolute_percentage_errors</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAPE : </span><span class="si">{</span><span class="n">mape_manual</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_lr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Linear Regression Predicted&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Linear Regression: Actual vs Predicted&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PowerConsumption Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMSE - Linear Regression: 9.6129
+MAPE : 2.6075%
+</pre></div>
+</div>
+<img alt="_images/0c45436d24a69d58eb49d302807080e090e4e1bedc93676db0a1633237569f85.png" src="_images/0c45436d24a69d58eb49d302807080e090e4e1bedc93676db0a1633237569f85.png" />
+</div>
+</div>
+</section>
+<section id="svr">
+<h3>SVR<a class="headerlink" href="#svr" title="Link to this heading">#</a></h3>
+<p>untuk menemukan fungsi yang memperkirakan hubungan antara variabel input dan variabel target yang berkelanjutan sambil meminimalkan kesalahan prediksi</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
+
+<span class="n">svr_model</span> <span class="o">=</span> <span class="n">SVR</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">)</span>
+<span class="n">svr_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">y_pred_svr</span> <span class="o">=</span> <span class="n">svr_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">rmse_svr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svr</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE - SVR: </span><span class="si">{</span><span class="n">rmse_svr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">absolute_percentage_errors_svr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred_svr</span><span class="p">)</span> <span class="o">/</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">mape_svr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">absolute_percentage_errors_svr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAPE - SVR: </span><span class="si">{</span><span class="n">mape_svr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_svr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;SVR Predicted&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;SVR: Actual vs Predicted&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PowerConsumption Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMSE - SVR: 303.3294
+MAPE - SVR: 144.3461%
+</pre></div>
+</div>
+<img alt="_images/5b9cd871caf8c774e8d75ca553ec15fbaf438770e591d53dca6df635ed441cde.png" src="_images/5b9cd871caf8c774e8d75ca553ec15fbaf438770e591d53dca6df635ed441cde.png" />
+</div>
+</div>
+</section>
+<section id="lstm">
+<h3>LSTM<a class="headerlink" href="#lstm" title="Link to this heading">#</a></h3>
+<p>untuk membuat prediksi dan klasifikasi yang berhubungan dengan waktu. pengembangan Recurrent Neural Network</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="c1"># Membentuk ulang data menjadi 3D untuk LSTM</span>
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="c1"># Membuat model LSTM</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;mse&#39;</span><span class="p">)</span>
+
+<span class="c1"># Melatih model</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Melakukan prediksi dengan model LSTM</span>
+<span class="n">y_pred_lstm</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+<span class="c1"># Menghitung RMSE</span>
+<span class="n">rmse_lstm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_lstm</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE - LSTM: </span><span class="si">{</span><span class="n">rmse_lstm</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Menghitung MAPE</span>
+<span class="n">absolute_percentage_errors_lstm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred_lstm</span><span class="p">)</span> <span class="o">/</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">mape_lstm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">absolute_percentage_errors_lstm</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAPE - LSTM: </span><span class="si">{</span><span class="n">mape_lstm</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_lstm</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;LSTM Predicted&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;LSTM: Actual vs Predicted&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PowerConsumption Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 1/50
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 760ms/step - loss: 201990.0938
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 1000us/step - loss: 196080.9688
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">1s</span> 23ms/step - loss: 194111.2656 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 2/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 16ms/step - loss: 198378.4219
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 193356.9219
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 191683.0938  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 3/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 198147.9531
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 192369.6875
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 190443.5938  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 4/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 193406.0156
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 189033.5625  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 187576.0625
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 5/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 194138.8125
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 188535.0938
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 186667.1875  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 6/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 191014.2656
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 186071.1250
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 184423.4062
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 7/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 181803.6562
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 180496.6406
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 180060.9688 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 8/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 177955.6250
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 177394.6094
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 9/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 149115.6875
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 166346.3125
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 10/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 183172.7812
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 176085.1094
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 11/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 178021.6875
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 171260.8594 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 12/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 172298.5156
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 165632.8438
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 13/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 166341.4688
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 161785.6094
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 14/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 130536.8125
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 143918.3906
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 148378.9219
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 15/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 16ms/step - loss: 164209.5938
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 159701.9375
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 158199.3750  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 16/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 160204.7969
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 156025.3438
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 154632.1875  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 17/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 139653.6250
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 143503.9062
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 18/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 145123.9375
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 141268.1250
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 139982.8594
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 19/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 116691.4062
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 122985.9062 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 125084.0781
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 20/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 107887.8281
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 116206.6250
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 118979.5625
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 21/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 123690.8438
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 120495.1484
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 119429.9141 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 22/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 117423.6406
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 115226.7969  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 114494.5078
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 23/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 115690.4531
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 998us/step - loss: 112746.3594
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 111764.9922  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 24/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 101563.2422
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 100681.3125
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 100387.3281
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 25/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 83306.8828
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 81568.0234
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 26/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 16ms/step - loss: 62772.5273
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 60693.8047
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 27/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 16ms/step - loss: 34281.2656
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 998us/step - loss: 33926.8906
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 998us/step - loss: 33808.7695
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 28/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 22046.0586
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 21776.1523
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 21686.1816  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 29/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 15304.9512
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 14857.6758
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 14708.5830  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 30/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 16ms/step - loss: 9333.6445
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 9098.3555
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 31/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 2594.5823
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 2554.3452
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 2540.9326  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 32/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 16ms/step - loss: 933.0227
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 924.9689
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 1ms/step - loss: 922.2842
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 33/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 522.7651
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 528.6237
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 34/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 682.0896
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 662.3064
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 655.7120  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 35/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 955.5588
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 964.5316
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 967.5225  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 36/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 1325.4187
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 1322.6161  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 1321.6819
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 37/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 1245.3973
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 1211.9333
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 1200.7787  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 38/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 949.5531
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 998.9799
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 1015.4555 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 39/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 901.3757
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 887.4230
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 882.7720
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 40/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 702.5206
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 687.9204
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 683.0536  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 41/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 387.1568
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 457.7703
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 42/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 353.1043
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 362.3209
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 365.3932
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 43/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 297.4619
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 294.6104
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 293.6600  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 44/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 276.5715
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 279.1779
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 280.0466
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 45/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 287.0332
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 285.5717  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 285.0845
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 46/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 206.0182
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 205.1797
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 204.9002  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 47/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 180.6428
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 185.4076
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 186.9959 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 48/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 15ms/step - loss: 207.8002
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 239.9471
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 996us/step - loss: 250.6628
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 49/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 165.2185
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 171.7714
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 2ms/step - loss: 173.9557  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 50/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━</span><span class=" -Color -Color-White">━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 14ms/step - loss: 230.8742
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 0s/step - loss: 232.0966
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">2/2</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 997us/step - loss: 232.5041
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">1/1</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 72ms/step
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<span class=" -Color -Color-Bold">1/1</span> <span class=" -Color -Color-Green">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Bold">0s</span> 74ms/step
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMSE - LSTM: 13.0764
+MAPE - LSTM: 3.5090%
+</pre></div>
+</div>
+<img alt="_images/2b335a6bfd62d71120bbac49a6b3ac192169afe6605eb9fed89b91ea51bba443.png" src="_images/2b335a6bfd62d71120bbac49a6b3ac192169afe6605eb9fed89b91ea51bba443.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sklearn</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.5.2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ensemble-bagging-dengan-linear-dan-svr">
+<h3>Ensemble Bagging Dengan Linear dan SVR<a class="headerlink" href="#ensemble-bagging-dengan-linear-dan-svr" title="Link to this heading">#</a></h3>
+<p>Ensemble Bagging dengan Linear Regression, model regresi linier dilatih secara independen pada subset data yang berbeda, kemudian hasil prediksi dari model-model ini digabungkan untuk menghasilkan prediksi akhir</p>
+<p>Ensemble Bagging dengan Support Vector Regression (SVR) adalah metode yang menggabungkan banyak model SVR untuk meningkatkan akurasi prediksi dan ketahanan terhadap noise atau outliers dalam data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Pastikan data dalam bentuk 2D</span>
+<span class="n">X_train_2d</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">X_test_2d</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 1. Bagging dengan Linear Regression</span>
+<span class="n">bagging_lr</span> <span class="o">=</span> <span class="n">BaggingRegressor</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">bagging_lr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_2d</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred_lr</span> <span class="o">=</span> <span class="n">bagging_lr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_2d</span><span class="p">)</span>
+
+<span class="c1"># Menghitung RMSE dan MAPE untuk Bagging Linear Regression</span>
+<span class="n">rmse_lr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_lr</span><span class="p">))</span>
+<span class="n">absolute_percentage_errors_lr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred_lr</span><span class="p">)</span> <span class="o">/</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">mape_lr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">absolute_percentage_errors_lr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE - Bagging Linear Regression: </span><span class="si">{</span><span class="n">rmse_lr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAPE - Bagging Linear Regression: </span><span class="si">{</span><span class="n">mape_lr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># 2. Bagging dengan SVR</span>
+<span class="n">bagging_svr</span> <span class="o">=</span> <span class="n">BaggingRegressor</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">SVR</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">),</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">bagging_svr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_2d</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred_svr</span> <span class="o">=</span> <span class="n">bagging_svr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_2d</span><span class="p">)</span>
+
+<span class="c1"># Menghitung RMSE dan MAPE untuk Bagging SVR</span>
+<span class="n">rmse_svr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svr</span><span class="p">))</span>
+<span class="n">absolute_percentage_errors_svr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred_svr</span><span class="p">)</span> <span class="o">/</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">mape_svr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">absolute_percentage_errors_svr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE - Bagging SVR: </span><span class="si">{</span><span class="n">rmse_svr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAPE - Bagging SVR: </span><span class="si">{</span><span class="n">mape_svr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual untuk Bagging Linear Regression</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_lr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bagging Linear Regression Predicted&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Bagging Linear Regression</span><span class="se">\n</span><span class="s1">RMSE: </span><span class="si">{</span><span class="n">rmse_lr</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, MAPE: </span><span class="si">{</span><span class="n">mape_lr</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PowerConsumption Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual untuk Bagging SVR</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_svr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bagging SVR Predicted&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Bagging SVR</span><span class="se">\n</span><span class="s1">RMSE: </span><span class="si">{</span><span class="n">rmse_svr</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, MAPE: </span><span class="si">{</span><span class="n">mape_svr</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Index&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PowerConsumption Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMSE - Bagging Linear Regression: 10.3126
+MAPE - Bagging Linear Regression: 2.8312%
+RMSE - Bagging SVR: 295.3855
+MAPE - Bagging SVR: 153.1421%
+</pre></div>
+</div>
+<img alt="_images/b04ede636e63cc099abf759148c7d8f9c20b6c129fe63bae5db942296f89e88e.png" src="_images/b04ede636e63cc099abf759148c7d8f9c20b6c129fe63bae5db942296f89e88e.png" />
+<img alt="_images/5162b2ba7a6d69d8ad0b1ecf1ed0c23c03d2597ce056f058550e011e9e21a1be.png" src="_images/5162b2ba7a6d69d8ad0b1ecf1ed0c23c03d2597ce056f058550e011e9e21a1be.png" />
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
+<h1>KESIMPULAN<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
+<p>Model Linear Regression adalh model terbaik untuk menenyatakan persentase kesalahan paling kecil</p>
+<ul class="simple">
+<li><p>Model yang memprediksi RMSE: 9.6129,<br />
+MAPE: 2.6075% dengan Linear Regression</p></li>
+<li><p>Model yang memprediksi RMSE: 303.3294<br />
+MAPE: 144.3461% dengan SVR</p></li>
+<li><p>Model yang memprediksi RMSE: 15.2530,<br />
+MAPE: 3.6718% dengan LSTM</p></li>
+<li><p>Model yang memprediksi RMSE: 10.3126,<br />
+MAPE: 2.8312% dengan Bagging Linear Regression</p></li>
+<li><p>Model yang memprediksi RMSE: 295.3855,<br />
+MAPE: 153.1421% dengan Bagging SVR</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deployement">
+<h1>DEPLOYEMENT<a class="headerlink" href="#deployement" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">lr_model</span><span class="p">,</span> <span class="s1">&#39;LR_model.joblib&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;LR_model.joblib&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="website-hasil">
+<h1>WEBSITE HASIL<a class="headerlink" href="#website-hasil" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://huggingface.co/spaces/NikiRaihan/PSD-ELECTRIC-POWER-CONSUMPTION">https://huggingface.co/spaces/NikiRaihan/PSD-ELECTRIC-POWER-CONSUMPTION</a></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="UAS1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">AIR QUALITY IN YOGYAKARTA</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="UAS3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ANALYSIS FOR WHETHER DATASET</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">ELECTRIC POWER CONSUMPTION</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-mengetahui-konsumsi-tenaga-listrik-di-indonesia">TUJUAN ANALISIS: MENGETAHUI KONSUMSI TENAGA LISTRIK DI INDONESIA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">DATA UNDERSTANDING (MEMAHAMI DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-from-web-to-dataframe">Collecting data from web to dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview-identifikasi-data">Data Overview (Identifikasi Data)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-data">Kualitas Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value">Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-tetangga-terdekat-k-nearest-neighbors-k-nn">1. K-Tetangga Terdekat (K-Nearest Neighbors, K-NN)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jarak-jangkauan-reachability-distance">2. Jarak Jangkauan (Reachability Distance)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kepadatan-jangkauan-lokal-local-reachability-density">3. Kepadatan Jangkauan Lokal (Local Reachability Density)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#faktor-outlier-lokal-local-outlier-factor">4. Faktor Outlier Lokal (Local Outlier Factor)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing-preproses-data">DATA PREPROCESSING (PREPROSES DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-missing-value">Mengatasi Missing Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-sliding-windows">Membuat Sliding Windows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minmax-scaler">MinMax Scaler</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">Data Modelling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-rmse">Rumus RMSE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-mape">Rumus MAPE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regresi">Linear Regresi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svr">SVR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lstm">LSTM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensemble-bagging-dengan-linear-dan-svr">Ensemble Bagging Dengan Linear dan SVR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">KESIMPULAN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployement">DEPLOYEMENT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#website-hasil">WEBSITE HASIL</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Niki Raihan Laili
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

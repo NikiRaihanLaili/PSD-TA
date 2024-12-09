@@ -1,0 +1,2773 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AIR QUALITY IN YOGYAKARTA &#8212; Proyek Sain Data - TA</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UAS1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ELECTRIC POWER CONSUMPTION" href="UAS2.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Proyek Sain Data - TA - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Proyek Sain Data - TA - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">AIR QUALITY IN YOGYAKARTA</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="UAS2.html">ELECTRIC POWER CONSUMPTION</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="UAS3.html">ANALYSIS FOR WHETHER DATASET</a></li>
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUAS1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UAS1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>AIR QUALITY IN YOGYAKARTA</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AIR QUALITY IN YOGYAKARTA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk">TUJUAN ANALISIS: KLASIFIKASI KUALITAS UDARA DI YOGYAKARTA BAGUS ATAU BURUK</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">DATA UNDERSTANDING (MEMAHAMI DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-from-web-to-dataframe">Collecting data from web to dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview-identifikasi-data">Data Overview (Identifikasi Data)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value">Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-tetangga-terdekat-k-nearest-neighbors-k-nn">1. K-Tetangga Terdekat (K-Nearest Neighbors, K-NN)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jarak-jangkauan-reachability-distance">2. Jarak Jangkauan (Reachability Distance)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kepadatan-jangkauan-lokal-local-reachability-density">3. Kepadatan Jangkauan Lokal (Local Reachability Density)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#faktor-outlier-lokal-local-outlier-factor">4. Faktor Outlier Lokal (Local Outlier Factor)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing-preproses-data">DATA PREPROCESSING (PREPROSES DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-missing-value">Mengatasi Missing Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">DATA MODELLING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-klasifikasi-data">Apa itu Klasifikasi data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-train-dan-data-test">Data Train dan Data Test</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-model-gaussian-naive-bayes-dengan-code-python">Membuat Model Model Gaussian Naive Bayes dengan Code Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-k-nearest-neighbors-knn-dengan-code-python">Membuat Model K-Nearest Neighbors (KNN) dengan Code Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest-classifier">Random Forest Classifier</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">KESIMPULAN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployement">DEPLOYEMENT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#website-hasil">WEBSITE HASIL</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="air-quality-in-yogyakarta">
+<h1>AIR QUALITY IN YOGYAKARTA<a class="headerlink" href="#air-quality-in-yogyakarta" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk">
+<h1>TUJUAN ANALISIS: KLASIFIKASI KUALITAS UDARA DI YOGYAKARTA BAGUS ATAU BURUK<a class="headerlink" href="#tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk" title="Link to this heading">#</a></h1>
+<p>Mendiagnosa tingkat Kualitas udara di Yogyakarta dengan menggunakan AQY dataset from Kaggle dataset (<a class="reference external" href="https://www.kaggle.com/datasets/adhang/air-quality-in-yogyakarta-indonesia-2021/data?select=psi-jogja-jan-2021.csv">https://www.kaggle.com/datasets/adhang/air-quality-in-yogyakarta-indonesia-2021/data?select=psi-jogja-jan-2021.csv</a>)</p>
+<p>Sekarang kualitas udara di seluruh dunia akan memburuk jika kita tidak menjaga lingkuang dengan benar, karena jika udara semakin memburuk akan menyebabkan masalah pernapasan yang serius bagi orang tua, orang penyakit paru-paru terutama di daerah perkotaan dan sering macet dengan padatnya transformasi kendaraan.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding-memahami-data">
+<h1>DATA UNDERSTANDING (MEMAHAMI DATA)<a class="headerlink" href="#data-understanding-memahami-data" title="Link to this heading">#</a></h1>
+<p>Data tersebut berfokus pada kualitas udara di yogyakarta. Indikator yang digunakan dalam data tersebut yaitu PM10, PM2.5, SO2, CO, O3, NO2, Max, Critical Component.</p>
+<p>Penjelasan teori Attribute dalam data:</p>
+<p>Referensi dari buku yang berjudul “Data Mining Concepts and Techniques” edisi ketiga.</p>
+<p>link : <a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
+<p>Dalam buku tersebut menjelaskan bahwa : Atribut adalah bidang data, yang mewakili karakteristik atau fitur objek data. Kata atribut, dimensi, fitur, dan variabel sering digunakan secara bergantian dalam literatur. Istilah dimensi umumnya digunakan dalam data warehousing. Pembelajaran mesin literatur cenderung menggunakan istilah fitur, sedangkan ahli statistik lebih memilih istilah variabel. Data profesional pertambangan dan basis data biasanya menggunakan istilah atribut, dan kami melakukannya di sini demikian juga. Atribut yang mendeskripsikan objek pelanggan dapat mencakup, misalnya, ID pelanggan, Nama dan alamat. Nilai yang diamati untuk atribut tertentu dikenal sebagai observasi. Satu set Atribut yang digunakan untuk mendeskripsikan objek tertentu disebut vektor atribut (atau vektor fitur). Distribusi data yang melibatkan satu atribut (atau variabel) disebut univariat. Distribusi bivariat melibatkan dua atribut, dan seterusnya.</p>
+<p>Untuk menganalisis Kualitas udara</p>
+<ul class="simple">
+<li><p>Fitur: “PM10” dengan tipe data Numerik, adalah Konsentrasi partikulat kasar dengan diameter ≤ 10 mikrometer (dalam µg/m³).</p></li>
+<li><p>Fitur: “PM2.5” dengan tipe data Numerik, adalah Konsentrasi partikulat halus dengan diameter ≤ 2.5 mikrometer (dalam µg/m³).</p></li>
+<li><p>Fitur: “SO2” dengan tipe data Numerik, adalah Konsentrasi sulfur dioksida (SO2) dalam µg/m³.</p></li>
+<li><p>Fitur: “CO” dengan tipe data Numerik, adalah Konsentrasi karbon monoksida (CO) dalam µg/m³.</p></li>
+<li><p>Fitur: “O3” dengan tipe data Numerik, adalah Konsentrasi ozon (O3) dalam µg/m³.</p></li>
+<li><p>Fitur: “NO2” dengan tipe data Numerik, adalah Konsentrasi nitrogen dioksida (NO2) dalam µg/m³.</p></li>
+<li><p>Fitur: “MAX” dengan tipe data Numerik, adalah Konsentrasi maksimum polutan yang terukur selama periode waktu tertentu</p></li>
+</ul>
+<section id="collecting-data-from-web-to-dataframe">
+<h2>Collecting data from web to dataframe<a class="headerlink" href="#collecting-data-from-web-to-dataframe" title="Link to this heading">#</a></h2>
+<p>Setelah mencari data kemudian melakukan import data ke dataframe</p>
+<p>Kemudian menampilkan seluruh baris data di dataframe df_main</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+
+<span class="n">file_paths</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;PSI/psi-jogja-[1-5]-2021.csv&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;PSI/psi-jogja-6-2021.csv&#39;</span><span class="p">)</span>
+
+<span class="n">data_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">)</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">file_paths</span><span class="p">]</span>
+<span class="n">df_main</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;datetime&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Time&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>Critical Component</th>
+      <th>Category</th>
+      <th>datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/1/2021</td>
+      <td>00:00:00</td>
+      <td>13</td>
+      <td>40</td>
+      <td>0.0</td>
+      <td>25</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/1/2021</td>
+      <td>01:00:00</td>
+      <td>12</td>
+      <td>38</td>
+      <td>0.0</td>
+      <td>24</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 01:00:00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/1/2021</td>
+      <td>02:00:00</td>
+      <td>11</td>
+      <td>35</td>
+      <td>0.0</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>35</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 02:00:00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/1/2021</td>
+      <td>03:00:00</td>
+      <td>10</td>
+      <td>32</td>
+      <td>0.0</td>
+      <td>22</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>32</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 03:00:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/1/2021</td>
+      <td>04:00:00</td>
+      <td>9</td>
+      <td>29</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>29</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 04:00:00</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4339</th>
+      <td>6/30/2021</td>
+      <td>19:00:00</td>
+      <td>41</td>
+      <td>62</td>
+      <td>NaN</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 19:00:00</td>
+    </tr>
+    <tr>
+      <th>4340</th>
+      <td>6/30/2021</td>
+      <td>20:00:00</td>
+      <td>40</td>
+      <td>62</td>
+      <td>NaN</td>
+      <td>12</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 20:00:00</td>
+    </tr>
+    <tr>
+      <th>4341</th>
+      <td>6/30/2021</td>
+      <td>21:00:00</td>
+      <td>39</td>
+      <td>61</td>
+      <td>NaN</td>
+      <td>12</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>61</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 21:00:00</td>
+    </tr>
+    <tr>
+      <th>4342</th>
+      <td>6/30/2021</td>
+      <td>22:00:00</td>
+      <td>38</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>60</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 22:00:00</td>
+    </tr>
+    <tr>
+      <th>4343</th>
+      <td>6/30/2021</td>
+      <td>23:00:00</td>
+      <td>36</td>
+      <td>59</td>
+      <td>NaN</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>59</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 23:00:00</td>
+    </tr>
+  </tbody>
+</table>
+<p>4344 rows × 12 columns</p>
+</div></div></div>
+</div>
+<p>Melihat Visualisasi histogram untuk PM10 dan PM2.5 berguna untuk melihat sebaran konsentrasi partikel di udara. Ini membantu untuk memahami seberapa sering nilai-nilai tertentu muncul dalam dataset.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Membaca dataset</span>
+<span class="n">file_paths</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;PSI/psi-jogja-[1-5]-2021.csv&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;PSI/psi-jogja-6-2021.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Visualisasi distribusi PM10</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PM10&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribusi PM10&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;PM10 Concentration&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Visualisasi distribusi PM2.5</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribusi PM2.5&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;PM2.5 Concentration&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/57a1f0aba85ef206abc8ef8dc91d64c000e923c1dfbde23f3f90a1c54d5543d5.png" src="_images/57a1f0aba85ef206abc8ef8dc91d64c000e923c1dfbde23f3f90a1c54d5543d5.png" />
+<img alt="_images/5012dd7b5522d183deb50214f0bbabe9186ca0fcf7d2a440ce9b6f130d28409b.png" src="_images/5012dd7b5522d183deb50214f0bbabe9186ca0fcf7d2a440ce9b6f130d28409b.png" />
+</div>
+</div>
+<p>Melihat Visualisasi waktu untuk PM2.5 digunakan untuk melihat bagaimana konsentrasi PM2.5 berubah seiring waktu. Ini membantu untuk mengidentifikasi pola musiman, tren jangka panjang, dan perubahan kualitas udara dari bulan ke bulan atau bahkan hari ke hari.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;datetime&#39;</span><span class="p">],</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;PM2.5 Concentration over Time (January to October 2021)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Date and Time&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PM2.5 Concentration&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d58f5a4552f4854d18c07300ddb17b101bf98dc72e915949f264f020475f961a.png" src="_images/d58f5a4552f4854d18c07300ddb17b101bf98dc72e915949f264f020475f961a.png" />
+</div>
+</div>
+<p>Melihat Visualisasi untuk melihat perubahan konsentrasi polutan udara pada setiap fitur</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;PM10&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PM10&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SO2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;SO2&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;CO&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;CO&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;O3&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;O3&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;NO2&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;NO2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pollutant Concentration&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Air Quality in Yogyakarta (2021)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/84cc37458fdf5b0546081be3ed519e12fc1899633b499af58a434ff3a9c7d817.png" src="_images/84cc37458fdf5b0546081be3ed519e12fc1899633b499af58a434ff3a9c7d817.png" />
+</div>
+</div>
+</section>
+<section id="data-overview-identifikasi-data">
+<h2>Data Overview (Identifikasi Data)<a class="headerlink" href="#data-overview-identifikasi-data" title="Link to this heading">#</a></h2>
+<p>Konsep macam-macam tipe data</p>
+<p>Atribut adalah bidang data, yang mewakili karakteristik atau fitur objek data. Hal ini berarti atribut, dimensi, fitur, dan variabel yang sering digunakan secara bergantian dalam literatur.</p>
+<ul class="simple">
+<li><p>Nominal attributes: atribut yang nilainya berupa simbol atau nama yang merepresentasikan kategori atau status tertentu tanpa urutan yang berarti.</p></li>
+<li><p>Binary attributes: atribut nominal dengan dua kategori atau status, biasanya 0 dan 1.</p></li>
+<li><p>Ordinal attributes: atribut yang nilainya memiliki urutan yang berarti atau ranking, namun selisih antara nilai-nilai tersebut tidak diketahui.</p></li>
+<li><p>Numeric attributes: atribut kuantitatif yang diukur dalam nilai integer atau real.</p></li>
+</ul>
+<p>Mengamati secara langsung dari data yang diperoleh dari Air Quality in Yogyakarta, Indonesia (2021) dan mendeskripsikan langsung jumlah kolom, nama kolom, jumlah data, missing values, dan type data dari setiap kolom data tersebut</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">df_main</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 4344 entries, 0 to 4343
+Data columns (total 12 columns):
+ #   Column              Non-Null Count  Dtype         
+---  ------              --------------  -----         
+ 0   Date                4344 non-null   object        
+ 1   Time                4344 non-null   object        
+ 2   PM10                4344 non-null   int64         
+ 3   PM2.5               4344 non-null   int64         
+ 4   SO2                 3742 non-null   float64       
+ 5   CO                  4344 non-null   int64         
+ 6   O3                  3338 non-null   float64       
+ 7   NO2                 4344 non-null   int64         
+ 8   Max                 4344 non-null   int64         
+ 9   Critical Component  4344 non-null   object        
+ 10  Category            4344 non-null   object        
+ 11  datetime            4344 non-null   datetime64[ns]
+dtypes: datetime64[ns](1), float64(2), int64(5), object(4)
+memory usage: 407.4+ KB
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4344.000000</td>
+      <td>4344.000000</td>
+      <td>3742.000000</td>
+      <td>4344.000000</td>
+      <td>3338.000000</td>
+      <td>4344.000000</td>
+      <td>4344.000000</td>
+      <td>4344</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>19.957182</td>
+      <td>49.505064</td>
+      <td>18.162747</td>
+      <td>15.059622</td>
+      <td>23.257939</td>
+      <td>4.237569</td>
+      <td>46.853591</td>
+      <td>2021-04-01 11:30:00</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>12.000000</td>
+      <td>0.000000</td>
+      <td>3.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>14.000000</td>
+      <td>2021-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>15.000000</td>
+      <td>40.000000</td>
+      <td>16.000000</td>
+      <td>9.000000</td>
+      <td>8.000000</td>
+      <td>3.000000</td>
+      <td>35.000000</td>
+      <td>2021-02-15 05:45:00</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>20.000000</td>
+      <td>52.000000</td>
+      <td>19.000000</td>
+      <td>12.000000</td>
+      <td>22.000000</td>
+      <td>4.000000</td>
+      <td>51.000000</td>
+      <td>2021-04-01 11:30:00</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>25.000000</td>
+      <td>58.000000</td>
+      <td>21.000000</td>
+      <td>22.000000</td>
+      <td>37.000000</td>
+      <td>5.000000</td>
+      <td>58.000000</td>
+      <td>2021-05-16 17:15:00</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>52.000000</td>
+      <td>92.000000</td>
+      <td>64.000000</td>
+      <td>38.000000</td>
+      <td>71.000000</td>
+      <td>10.000000</td>
+      <td>92.000000</td>
+      <td>2021-06-30 23:00:00</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.187336</td>
+      <td>13.514900</td>
+      <td>7.323580</td>
+      <td>7.612137</td>
+      <td>17.091417</td>
+      <td>1.915004</td>
+      <td>15.822546</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Dari hasil kode diatas yang merupakan tabel dari dataset, kita bisa menyimpulkan bahwa data ini memiliki 4344 baris dan 10 kolom</p>
+<p>Untuk fitur dari dataset tersebut ada 6 yaitu seperti yang disebutkan diatas: PM10, PM2.5, SO2, CO, O3, NO2, Max. Sedangkan untuk targetnya adalah Critical Component.</p>
+<p>Penjelasan dari setiap fitur yang ada pada tabel diatas:</p>
+<p>Target : “Critical Component” dengan tipe data Categorical, adalah prediksi Parameter polutan yang memiliki konsentrasi tertinggi selama pengukuran fitur sebelumnya.</p>
+<section id="missing-value">
+<h3>Missing Value<a class="headerlink" href="#missing-value" title="Link to this heading">#</a></h3>
+<p>Mencari missing value apakah ada missing value di data ini</p>
+<p>setelah di cek terdapat missing value pada fitur SO2 dan O3</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Date                     0
+Time                     0
+PM10                     0
+PM2.5                    0
+SO2                    602
+CO                       0
+O3                    1006
+NO2                      0
+Max                      0
+Critical Component       0
+Category                 0
+datetime                 0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="outliers">
+<h3>Outliers<a class="headerlink" href="#outliers" title="Link to this heading">#</a></h3>
+<p>Lalu, saya melakukan deteksi outlier, untuk memperbaiki kualitas data.</p>
+<p>Menurut referensi yang didapat dari buku “Data Mining : Concept and Technique”:</p>
+<p>Link:
+<a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
+<p>Local Outlier Factor (LOF) adalah metode deteksi outlier yang didasarkan pada kepadatan lokal suatu titik data dalam kaitannya dengan tetangga terdekatnya. Metode ini bertujuan untuk mengidentifikasi outlier lokal dengan membandingkan kepadatan lokal dari suatu titik dengan kepadatan lokal dari tetangga-tetangganya. Berikut adalah komponen utama dan langkah-langkah perhitungan dalam LOF:</p>
+<section id="k-tetangga-terdekat-k-nearest-neighbors-k-nn">
+<h4>1. K-Tetangga Terdekat (K-Nearest Neighbors, K-NN)<a class="headerlink" href="#k-tetangga-terdekat-k-nearest-neighbors-k-nn" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Jarak K (k-distance)</strong>: Jarak dari titik <span class="math notranslate nohighlight">\( o \)</span> ke tetangga terdekat ke-k.
+$<span class="math notranslate nohighlight">\(
+\text{k-distance}(o) = \text{dist}(o, o_k)
+\)</span><span class="math notranslate nohighlight">\(
+di mana \)</span> o_k <span class="math notranslate nohighlight">\( adalah tetangga terdekat ke-k dari \)</span> o $.</p></li>
+<li><p><strong>Lingkungan Jarak K (k-distance neighborhood)</strong>: Himpunan titik-titik yang berada dalam jarak K dari <span class="math notranslate nohighlight">\( o \)</span>.
+$<span class="math notranslate nohighlight">\(
+N_k(o) = \{ o' \mid \text{dist}(o, o') \leq \text{k-distance}(o) \}
+\)</span>$</p></li>
+</ul>
+</section>
+<section id="jarak-jangkauan-reachability-distance">
+<h4>2. Jarak Jangkauan (Reachability Distance)<a class="headerlink" href="#jarak-jangkauan-reachability-distance" title="Link to this heading">#</a></h4>
+<p>Jarak jangkauan dari titik <span class="math notranslate nohighlight">\( o' \)</span> ke titik <span class="math notranslate nohighlight">\( o \)</span> didefinisikan sebagai:
+$<span class="math notranslate nohighlight">\(
+\text{reachdist}_k(o', o) = \max(\text{k-distance}(o), \text{dist}(o', o))
+\)</span>$</p>
+</section>
+<section id="kepadatan-jangkauan-lokal-local-reachability-density">
+<h4>3. Kepadatan Jangkauan Lokal (Local Reachability Density)<a class="headerlink" href="#kepadatan-jangkauan-lokal-local-reachability-density" title="Link to this heading">#</a></h4>
+<p>Kepadatan jangkauan lokal <span class="math notranslate nohighlight">\( lrd_k(o) \)</span> dari titik <span class="math notranslate nohighlight">\( o \)</span> adalah kebalikan dari rata-rata jarak jangkauan dari tetangga terdekatnya:
+$<span class="math notranslate nohighlight">\(
+lrd_k(o) = \frac{|N_k(o)|}{\sum_{o' \in N_k(o)} \text{reachdist}_k(o', o)}
+\)</span>$</p>
+</section>
+<section id="faktor-outlier-lokal-local-outlier-factor">
+<h4>4. Faktor Outlier Lokal (Local Outlier Factor)<a class="headerlink" href="#faktor-outlier-lokal-local-outlier-factor" title="Link to this heading">#</a></h4>
+<p>Faktor outlier lokal <span class="math notranslate nohighlight">\( LOF_k(o) \)</span> dari titik <span class="math notranslate nohighlight">\( o \)</span> adalah rata-rata dari rasio kepadatan jangkauan lokal <span class="math notranslate nohighlight">\( o \)</span> terhadap kepadatan jangkauan lokal dari tetangga terdekatnya:
+$<span class="math notranslate nohighlight">\(
+LOF_k(o) = \frac{\sum_{o' \in N_k(o)} \frac{lrd_k(o')}{lrd_k(o)}}{|N_k(o)|}
+\)</span>$</p>
+<p>Data outlier sering kali mempengaruhi model data secara umum sehingga pengaruh dari data outlier tersebut harus dikurangi atau dihilangkan. Hal ini merujuk kepda <a class="reference external" href="https://ejurnal.its.ac.id/index.php/sains_seni/article/download/22520/3642">https://ejurnal.its.ac.id/index.php/sains_seni/article/download/22520/3642</a></p>
+<p>Proses perhitungan LOF untuk mendeteksi adanya outlier dengan 40 tetangga terdekat menggunakan jarak Euclidean (p=2).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">LocalOutlierFactor</span>
+
+<span class="c1"># Model LOF</span>
+<span class="n">lof</span> <span class="o">=</span> <span class="n">LocalOutlierFactor</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">contamination</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;lof&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lof</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">df_main</span><span class="p">[[</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">]])</span>
+
+<span class="n">df_main_lof</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;lof&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">df_main_lof</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>Critical Component</th>
+      <th>Category</th>
+      <th>datetime</th>
+      <th>lof</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>1/1/2021</td>
+      <td>06:00:00</td>
+      <td>8</td>
+      <td>24</td>
+      <td>0.0</td>
+      <td>20</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>24</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 06:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1/1/2021</td>
+      <td>10:00:00</td>
+      <td>7</td>
+      <td>22</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>22</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 10:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1/1/2021</td>
+      <td>13:00:00</td>
+      <td>6</td>
+      <td>19</td>
+      <td>0.0</td>
+      <td>20</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>20</td>
+      <td>CO</td>
+      <td>Good</td>
+      <td>2021-01-01 13:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1/1/2021</td>
+      <td>16:00:00</td>
+      <td>6</td>
+      <td>17</td>
+      <td>0.0</td>
+      <td>20</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>20</td>
+      <td>CO</td>
+      <td>Good</td>
+      <td>2021-01-01 16:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1/1/2021</td>
+      <td>23:00:00</td>
+      <td>6</td>
+      <td>19</td>
+      <td>0.0</td>
+      <td>20</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>20</td>
+      <td>CO</td>
+      <td>Good</td>
+      <td>2021-01-01 23:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4025</th>
+      <td>6/17/2021</td>
+      <td>17:00:00</td>
+      <td>8</td>
+      <td>17</td>
+      <td>NaN</td>
+      <td>10</td>
+      <td>NaN</td>
+      <td>5</td>
+      <td>17</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-06-17 17:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>4026</th>
+      <td>6/17/2021</td>
+      <td>18:00:00</td>
+      <td>8</td>
+      <td>17</td>
+      <td>NaN</td>
+      <td>10</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>17</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-06-17 18:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>4027</th>
+      <td>6/17/2021</td>
+      <td>19:00:00</td>
+      <td>9</td>
+      <td>19</td>
+      <td>NaN</td>
+      <td>12</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>19</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-06-17 19:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>4029</th>
+      <td>6/17/2021</td>
+      <td>21:00:00</td>
+      <td>10</td>
+      <td>22</td>
+      <td>NaN</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>7</td>
+      <td>22</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-06-17 21:00:00</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>4030</th>
+      <td>6/17/2021</td>
+      <td>22:00:00</td>
+      <td>11</td>
+      <td>24</td>
+      <td>NaN</td>
+      <td>14</td>
+      <td>NaN</td>
+      <td>7</td>
+      <td>24</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-06-17 22:00:00</td>
+      <td>-1</td>
+    </tr>
+  </tbody>
+</table>
+<p>152 rows × 13 columns</p>
+</div></div></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-preprocessing-preproses-data">
+<h1>DATA PREPROCESSING (PREPROSES DATA)<a class="headerlink" href="#data-preprocessing-preproses-data" title="Link to this heading">#</a></h1>
+<section id="mengatasi-missing-value">
+<h2>Mengatasi Missing Value<a class="headerlink" href="#mengatasi-missing-value" title="Link to this heading">#</a></h2>
+<p>Bisa dilihat sebelumnya saat pengecekan missing value terdapat missing value, disini saya melakukan Interpolasi digunakan untuk mengisi nilai yang hilang dalam dataset dengan memprediksi nilai-nilai tersebut berdasarkan data yang ada di sekitarnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span> <span class="o">=</span> <span class="n">df_main</span><span class="o">.</span><span class="n">interpolate</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_main</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           Date      Time  PM10  PM2.5   SO2  CO    O3  NO2  Max  \
+0      1/1/2021  00:00:00    13     40   0.0  25   0.0    0   40   
+1      1/1/2021  01:00:00    12     38   0.0  24   0.0    0   38   
+2      1/1/2021  02:00:00    11     35   0.0  23   0.0    0   35   
+3      1/1/2021  03:00:00    10     32   0.0  22   0.0    0   32   
+4      1/1/2021  04:00:00     9     29   0.0  21   0.0    0   29   
+...         ...       ...   ...    ...   ...  ..   ...  ...  ...   
+4339  6/30/2021  19:00:00    41     62  64.0  13  16.0    6   62   
+4340  6/30/2021  20:00:00    40     62  64.0  12  16.0    6   62   
+4341  6/30/2021  21:00:00    39     61  64.0  12  16.0    6   61   
+4342  6/30/2021  22:00:00    38     60  64.0  11  16.0    6   60   
+4343  6/30/2021  23:00:00    36     59  64.0  11  16.0    6   59   
+
+     Critical Component  Category            datetime  lof  
+0                 PM2.5      Good 2021-01-01 00:00:00    1  
+1                 PM2.5      Good 2021-01-01 01:00:00    1  
+2                 PM2.5      Good 2021-01-01 02:00:00    1  
+3                 PM2.5      Good 2021-01-01 03:00:00    1  
+4                 PM2.5      Good 2021-01-01 04:00:00    1  
+...                 ...       ...                 ...  ...  
+4339              PM2.5  Moderate 2021-06-30 19:00:00    1  
+4340              PM2.5  Moderate 2021-06-30 20:00:00    1  
+4341              PM2.5  Moderate 2021-06-30 21:00:00    1  
+4342              PM2.5  Moderate 2021-06-30 22:00:00    1  
+4343              PM2.5  Moderate 2021-06-30 23:00:00    1  
+
+[4344 rows x 13 columns]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Temp\ipykernel_1616\1870272509.py:1: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  df_main = df_main.interpolate()
+</pre></div>
+</div>
+</div>
+</div>
+<p>Setelah melakukan Interpolasi data, bisa dilihat missing value sudah tidak ada, dengan begini kualitas data akan semakin baik</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Date                  0
+Time                  0
+PM10                  0
+PM2.5                 0
+SO2                   0
+CO                    0
+O3                    0
+NO2                   0
+Max                   0
+Critical Component    0
+Category              0
+datetime              0
+lof                   0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mengatasi-outlier">
+<h2>Mengatasi Outlier<a class="headerlink" href="#mengatasi-outlier" title="Link to this heading">#</a></h2>
+<p>Pada pengecekan outlier, bisa di lihat sendiri ada banyak data yang outlier disini saya akan mengatasi outlier dengan cara interpolate data. Teknik ini sering digunakan ketika ada data yang tidak lengkap. interpolate sangat berguna untuk mengisi nilai yang hilang pada kolom tertentu</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">LocalOutlierFactor</span>
+
+<span class="n">lof</span> <span class="o">=</span> <span class="n">LocalOutlierFactor</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">contamination</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;lof&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lof</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">df_main</span><span class="p">[[</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">]])</span>
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>Critical Component</th>
+      <th>Category</th>
+      <th>datetime</th>
+      <th>lof</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/1/2021</td>
+      <td>00:00:00</td>
+      <td>13</td>
+      <td>40</td>
+      <td>0.0</td>
+      <td>25</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 00:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/1/2021</td>
+      <td>01:00:00</td>
+      <td>12</td>
+      <td>38</td>
+      <td>0.0</td>
+      <td>24</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 01:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/1/2021</td>
+      <td>02:00:00</td>
+      <td>11</td>
+      <td>35</td>
+      <td>0.0</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>35</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 02:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/1/2021</td>
+      <td>03:00:00</td>
+      <td>10</td>
+      <td>32</td>
+      <td>0.0</td>
+      <td>22</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>32</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 03:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/1/2021</td>
+      <td>04:00:00</td>
+      <td>9</td>
+      <td>29</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>29</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 04:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4339</th>
+      <td>6/30/2021</td>
+      <td>19:00:00</td>
+      <td>41</td>
+      <td>62</td>
+      <td>64.0</td>
+      <td>13</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 19:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4340</th>
+      <td>6/30/2021</td>
+      <td>20:00:00</td>
+      <td>40</td>
+      <td>62</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 20:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4341</th>
+      <td>6/30/2021</td>
+      <td>21:00:00</td>
+      <td>39</td>
+      <td>61</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>61</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 21:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4342</th>
+      <td>6/30/2021</td>
+      <td>22:00:00</td>
+      <td>38</td>
+      <td>60</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>60</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 22:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4343</th>
+      <td>6/30/2021</td>
+      <td>23:00:00</td>
+      <td>36</td>
+      <td>59</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>59</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 23:00:00</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>4344 rows × 13 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;lof&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;PM2.5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;PM2.5&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>Critical Component</th>
+      <th>Category</th>
+      <th>datetime</th>
+      <th>lof</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/1/2021</td>
+      <td>00:00:00</td>
+      <td>13</td>
+      <td>40.0</td>
+      <td>0.0</td>
+      <td>25</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 00:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/1/2021</td>
+      <td>01:00:00</td>
+      <td>12</td>
+      <td>38.0</td>
+      <td>0.0</td>
+      <td>24</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 01:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/1/2021</td>
+      <td>02:00:00</td>
+      <td>11</td>
+      <td>35.0</td>
+      <td>0.0</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>35</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 02:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/1/2021</td>
+      <td>03:00:00</td>
+      <td>10</td>
+      <td>32.0</td>
+      <td>0.0</td>
+      <td>22</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>32</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 03:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/1/2021</td>
+      <td>04:00:00</td>
+      <td>9</td>
+      <td>29.0</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>29</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 04:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4339</th>
+      <td>6/30/2021</td>
+      <td>19:00:00</td>
+      <td>41</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>13</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 19:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4340</th>
+      <td>6/30/2021</td>
+      <td>20:00:00</td>
+      <td>40</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 20:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4341</th>
+      <td>6/30/2021</td>
+      <td>21:00:00</td>
+      <td>39</td>
+      <td>61.0</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>61</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 21:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4342</th>
+      <td>6/30/2021</td>
+      <td>22:00:00</td>
+      <td>38</td>
+      <td>60.0</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>60</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 22:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4343</th>
+      <td>6/30/2021</td>
+      <td>23:00:00</td>
+      <td>36</td>
+      <td>59.0</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>59</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 23:00:00</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>4344 rows × 13 columns</p>
+</div></div></div>
+</div>
+<p>Bisa dilihat di atas data terlihat semakin berkualitas</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-modelling">
+<h1>DATA MODELLING<a class="headerlink" href="#data-modelling" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># Menentukan fitur (X) dan target (Y)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[[</span><span class="s1">&#39;PM10&#39;</span><span class="p">,</span> <span class="s1">&#39;SO2&#39;</span><span class="p">,</span> <span class="s1">&#39;CO&#39;</span><span class="p">,</span> <span class="s1">&#39;O3&#39;</span><span class="p">,</span> <span class="s1">&#39;NO2&#39;</span><span class="p">]]</span>  <span class="c1"># Contoh fitur</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Category&#39;</span><span class="p">]</span>  <span class="c1"># Target yang ingin diprediksi</span>
+
+<span class="c1"># Membagi data menjadi data training dan data testing</span>
+<span class="n">X_train_model</span><span class="p">,</span> <span class="n">X_test_model</span><span class="p">,</span> <span class="n">Y_train_model</span><span class="p">,</span> <span class="n">Y_test_model</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan dimensi data training dan testing</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensi X_train_model:&quot;</span><span class="p">,</span> <span class="n">X_train_model</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensi Y_train_model:&quot;</span><span class="p">,</span> <span class="n">Y_train_model</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensi X_test_model:&quot;</span><span class="p">,</span> <span class="n">X_test_model</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensi Y_test_model:&quot;</span><span class="p">,</span> <span class="n">Y_test_model</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dimensi X_train_model: (3475, 5)
+Dimensi Y_train_model: (3475,)
+Dimensi X_test_model: (869, 5)
+Dimensi Y_test_model: (869,)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Y_train_model</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1894        Good
+1778        Good
+3571    Moderate
+3416    Moderate
+3379    Moderate
+          ...   
+3444    Moderate
+466     Moderate
+3092        Good
+3772    Moderate
+860     Moderate
+Name: Category, Length: 3475, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<section id="apa-itu-klasifikasi-data">
+<h2>Apa itu Klasifikasi data<a class="headerlink" href="#apa-itu-klasifikasi-data" title="Link to this heading">#</a></h2>
+<p>Menurut referensi pada buku berjudul  “Data Mining Concept and Techniques” edisi ketiga pada link : link : The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann</p>
+<p>menjelaskan bahwa Naïve Bayes adalah teknik klasifikasi statistik berdasarkan Teorema Bayes. Ini adalah salah satu algoritma pembelajaran terawasi yang paling sederhana. Pengklasifikasi Naïve Bayes adalah algoritma yang cepat, akurat, dan andal. Pengklasifikasi Naïve Bayes memiliki akurasi dan kecepatan tinggi pada kumpulan data besar.</p>
+<p>Algoritma Naïve Bayes terdiri dari dua kata Naïve dan Bayes, yang dapat digambarkan sebagai:</p>
+<ul class="simple">
+<li><p>Naïve: Disebut Naïve karena mengasumsikan kemunculan suatu ciri tertentu tidak bergantung pada kemunculan ciri lainnya. Misalnya jika buah dikenali berdasarkan warna, bentuk, dan rasa, maka buah yang berwarna merah, bulat, dan manis dikenali sebagai apel. Oleh karena itu, setiap fitur secara individual berkontribusi untuk mengidentifikasi bahwa itu adalah sebuah apel tanpa bergantung satu sama lain.</p></li>
+<li><p>Bayes: Disebut Bayes karena bergantung pada prinsip Teorema Bayes.</p></li>
+</ul>
+<p>rumus dari naive bayes :</p>
+<p><img alt="alt text" src="rumus%20naive%20bayes.png" /></p>
+<ul class="simple">
+<li><p>P(H|X) =&gt; probabilitas hipotesis H jika diberi data X. Ini dikenal sebagai probabilitas posterior.</p></li>
+<li><p>P(X|H) =&gt; probabilitas data X jika hipotesis H benar. Ini dikenal sebagai probabilitas posterior.</p></li>
+<li><p>P(H) =&gt; kemungkinan hipotesis H benar (apa pun datanya). Ini dikenal sebagai probabilitas sebelumnya dari H.</p></li>
+<li><p>P(X) =&gt; probabilitas data (terlepas dari hipotesisnya). Ini dikenal sebagai probabilitas sebelumnya.</p></li>
+</ul>
+<p>Menyalin df_main ke dalam variabel df_main_gnb untuk dilakukan perhitungan Gaussian Naive Bayes dan menampilkan df_main_gnb yang telah disalin sebelumnya</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main_gnb</span> <span class="o">=</span> <span class="n">df_main</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_main_gnb</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>Critical Component</th>
+      <th>Category</th>
+      <th>datetime</th>
+      <th>lof</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/1/2021</td>
+      <td>00:00:00</td>
+      <td>13</td>
+      <td>40.0</td>
+      <td>0.0</td>
+      <td>25</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 00:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/1/2021</td>
+      <td>01:00:00</td>
+      <td>12</td>
+      <td>38.0</td>
+      <td>0.0</td>
+      <td>24</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 01:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/1/2021</td>
+      <td>02:00:00</td>
+      <td>11</td>
+      <td>35.0</td>
+      <td>0.0</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>35</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 02:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/1/2021</td>
+      <td>03:00:00</td>
+      <td>10</td>
+      <td>32.0</td>
+      <td>0.0</td>
+      <td>22</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>32</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 03:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/1/2021</td>
+      <td>04:00:00</td>
+      <td>9</td>
+      <td>29.0</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>29</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 04:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4339</th>
+      <td>6/30/2021</td>
+      <td>19:00:00</td>
+      <td>41</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>13</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 19:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4340</th>
+      <td>6/30/2021</td>
+      <td>20:00:00</td>
+      <td>40</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 20:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4341</th>
+      <td>6/30/2021</td>
+      <td>21:00:00</td>
+      <td>39</td>
+      <td>61.0</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>61</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 21:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4342</th>
+      <td>6/30/2021</td>
+      <td>22:00:00</td>
+      <td>38</td>
+      <td>60.0</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>60</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 22:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4343</th>
+      <td>6/30/2021</td>
+      <td>23:00:00</td>
+      <td>36</td>
+      <td>59.0</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>59</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 23:00:00</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>4344 rows × 13 columns</p>
+</div></div></div>
+</div>
+<p>Melakukan pemisahan dataset menjadi dua bagian: set data training dan testing sebesar 20% untuk data testing dan 80% untuk data training. X_train untuk data training(features), X_test untuk data testing(features), y_train untuk data training(targets), y_test untuk data testing(targets).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_train_model</span><span class="p">,</span> <span class="n">Y_train_model</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">X_test</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PM10</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1317</th>
+      <td>10</td>
+      <td>18.0</td>
+      <td>24</td>
+      <td>70.000000</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2495</th>
+      <td>17</td>
+      <td>17.0</td>
+      <td>12</td>
+      <td>31.000000</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1256</th>
+      <td>30</td>
+      <td>21.0</td>
+      <td>26</td>
+      <td>57.000000</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>565</th>
+      <td>34</td>
+      <td>25.0</td>
+      <td>29</td>
+      <td>42.000000</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>3</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.000000</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2331</th>
+      <td>18</td>
+      <td>27.0</td>
+      <td>23</td>
+      <td>19.000000</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3001</th>
+      <td>29</td>
+      <td>17.0</td>
+      <td>11</td>
+      <td>44.243902</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3486</th>
+      <td>37</td>
+      <td>16.0</td>
+      <td>16</td>
+      <td>35.000000</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>3806</th>
+      <td>24</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.000000</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3070</th>
+      <td>22</td>
+      <td>22.0</td>
+      <td>12</td>
+      <td>39.000000</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+<p>695 rows × 5 columns</p>
+</div></div></div>
+</div>
+<p>Konsep Akurasi Model</p>
+<p>Menggunakan data training untuk mendapatkan pengklasifikasi dan kemudian memperkirakan keakuratan model pembelajaran yang dihasilkan dapat mengakibatkan perkiraan terlalu optimistis yang menyesatkan karena terlalu mengkhususkan algoritma pembelajaran pada data.  Sebaliknya, lebih baik mengukur keakuratan pengklasifikasi pada set pengujian yang terdiri dari tupel berlabel kelas yang tidak digunakan untuk melatih model.</p>
+<p>Menurut referensi pada buku berjudul  “Data Mining Concept and Techniques” edisi ketiga pada link : link : The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann</p>
+<p><span class="math notranslate nohighlight">\(\Huge accuracy = \frac{TP + TN}{P + N}\)</span></p>
+<p>maka kita bisa menggunakan confusion matrix seperti berikut</p>
+<p><img alt="alt text" src="_images/image-20240529-211947.png" /></p>
+<p><img alt="alt text" src="_images/image-20240529-212506.png" /></p>
+<p>Maka : kita bisa menghitung akurasi dari suatu model dengan menentukan P’ dan N’ , dimana Tuple postifif ditambah Tuple negatif kita bagi dengan total Tuple baru kita mendapat akurasi model</p>
+<p>Membuat model gaussian naive bayes dengan data training, setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
+</section>
+<section id="data-train-dan-data-test">
+<h2>Data Train dan Data Test<a class="headerlink" href="#data-train-dan-data-test" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[[</span><span class="s1">&#39;PM10&#39;</span><span class="p">,</span> <span class="s1">&#39;SO2&#39;</span><span class="p">,</span> <span class="s1">&#39;CO&#39;</span><span class="p">,</span> <span class="s1">&#39;O3&#39;</span><span class="p">,</span> <span class="s1">&#39;NO2&#39;</span><span class="p">]]</span>  <span class="c1"># Fitur</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;Category&#39;</span><span class="p">]</span>  <span class="c1"># Target, misalnya kategori kualitas udara</span>
+
+<span class="c1"># Split data menjadi training dan testing set</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">Y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="membuat-model-model-gaussian-naive-bayes-dengan-code-python">
+<h2>Membuat Model Model Gaussian Naive Bayes dengan Code Python<a class="headerlink" href="#membuat-model-model-gaussian-naive-bayes-dengan-code-python" title="Link to this heading">#</a></h2>
+<p>Membuat model gaussian naive bayes dengan data training, setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
+
+<span class="n">gnb_model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+
+<span class="c1"># Latih model</span>
+<span class="n">gnb_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi</span>
+<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">gnb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">accuracy_gnb</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy_gnb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi: </span><span class="si">{</span><span class="n">accuracy_gnb</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.8147295742232451
+Akurasi: 81.47%
+</pre></div>
+</div>
+</div>
+</div>
+<p>Berdasarkan nilai diatas tingkat akurasinya 81.47%. Ini menunjukkan model tersebut dapat memprediksi dengan benar sekitar 81.47% kasus yang diberikan.</p>
+</section>
+<section id="membuat-model-k-nearest-neighbors-knn-dengan-code-python">
+<h2>Membuat Model K-Nearest Neighbors (KNN) dengan Code Python<a class="headerlink" href="#membuat-model-k-nearest-neighbors-knn-dengan-code-python" title="Link to this heading">#</a></h2>
+<p>Menyalin df_main_lof ke dalam variabel df_main_knn untuk dilakukan perhitungan K-Nearest Neighbors (KNN) dan menampilkan df_main_knn yang telah disalin sebelumnya</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main_knn</span> <span class="o">=</span> <span class="n">df_main</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_main_knn</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>PM10</th>
+      <th>PM2.5</th>
+      <th>SO2</th>
+      <th>CO</th>
+      <th>O3</th>
+      <th>NO2</th>
+      <th>Max</th>
+      <th>Critical Component</th>
+      <th>Category</th>
+      <th>datetime</th>
+      <th>lof</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/1/2021</td>
+      <td>00:00:00</td>
+      <td>13</td>
+      <td>40.0</td>
+      <td>0.0</td>
+      <td>25</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 00:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/1/2021</td>
+      <td>01:00:00</td>
+      <td>12</td>
+      <td>38.0</td>
+      <td>0.0</td>
+      <td>24</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 01:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/1/2021</td>
+      <td>02:00:00</td>
+      <td>11</td>
+      <td>35.0</td>
+      <td>0.0</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>35</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 02:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/1/2021</td>
+      <td>03:00:00</td>
+      <td>10</td>
+      <td>32.0</td>
+      <td>0.0</td>
+      <td>22</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>32</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 03:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/1/2021</td>
+      <td>04:00:00</td>
+      <td>9</td>
+      <td>29.0</td>
+      <td>0.0</td>
+      <td>21</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>29</td>
+      <td>PM2.5</td>
+      <td>Good</td>
+      <td>2021-01-01 04:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4339</th>
+      <td>6/30/2021</td>
+      <td>19:00:00</td>
+      <td>41</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>13</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 19:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4340</th>
+      <td>6/30/2021</td>
+      <td>20:00:00</td>
+      <td>40</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>62</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 20:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4341</th>
+      <td>6/30/2021</td>
+      <td>21:00:00</td>
+      <td>39</td>
+      <td>61.0</td>
+      <td>64.0</td>
+      <td>12</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>61</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 21:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4342</th>
+      <td>6/30/2021</td>
+      <td>22:00:00</td>
+      <td>38</td>
+      <td>60.0</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>60</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 22:00:00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4343</th>
+      <td>6/30/2021</td>
+      <td>23:00:00</td>
+      <td>36</td>
+      <td>59.0</td>
+      <td>64.0</td>
+      <td>11</td>
+      <td>16.0</td>
+      <td>6</td>
+      <td>59</td>
+      <td>PM2.5</td>
+      <td>Moderate</td>
+      <td>2021-06-30 23:00:00</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>4344 rows × 13 columns</p>
+</div></div></div>
+</div>
+<p>Membuat model K-Nearest Neighbors (KNN) dengan 5 tetangga terdekat, setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
+
+<span class="c1"># Inisialisasi model KNN untuk klasifikasi</span>
+<span class="n">knn_clf</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Latih model</span>
+<span class="n">knn_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi pada data testing</span>
+<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">knn_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model</span>
+<span class="n">accuracy_knn</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy_knn</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi KNN: </span><span class="si">{</span><span class="n">accuracy_knn</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.956271576524741
+Akurasi KNN: 95.63%
+</pre></div>
+</div>
+</div>
+</div>
+<p>Berdasarkan nilai diatas tingkat akurasinya 95.63%. Ini menunjukkan model tersebut dapat memprediksi dengan benar sekitar 95.63% kasus yang diberikan.</p>
+</section>
+<section id="random-forest-classifier">
+<h2>Random Forest Classifier<a class="headerlink" href="#random-forest-classifier" title="Link to this heading">#</a></h2>
+<p>Membuat model Random Forest Classifier dengan estimators 100, setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Inisialisasi model Random Forest Classifier</span>
+<span class="n">rf_clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Latih model</span>
+<span class="n">rf_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi pada data testing</span>
+<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">rf_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi Model</span>
+<span class="n">accuracy_rf_clf</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy_rf_clf</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi Random Forest: </span><span class="si">{</span><span class="n">accuracy_rf_clf</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.9769850402761795
+Akurasi Random Forest: 97.70%
+</pre></div>
+</div>
+</div>
+</div>
+<p>Berdasarkan nilai diatas tingkat akurasinya 97.70%. Ini menunjukkan model tersebut dapat memprediksi dengan benar sekitar 97.70% kasus yang diberikan.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
+<h1>KESIMPULAN<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
+<p>HASIL AKURASI TIAP MODEL DALAM TABEL</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Data hasil evaluasi</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Model&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;GaussianNB&#39;</span><span class="p">,</span> <span class="s1">&#39;KNN&#39;</span><span class="p">,</span> <span class="s1">&#39;RandomForest&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Accuracy&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">accuracy_gnb</span><span class="p">,</span> <span class="n">accuracy_knn</span><span class="p">,</span> <span class="n">accuracy_rf_clf</span><span class="p">]</span> 
+<span class="p">}</span>
+
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>  <span class="c1"># Menyembunyikan axis</span>
+
+<span class="n">table</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">cellText</span><span class="o">=</span><span class="n">results_df</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">colLabels</span><span class="o">=</span><span class="n">results_df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">cellLoc</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+
+<span class="c1"># Format tabel</span>
+<span class="n">table</span><span class="o">.</span><span class="n">auto_set_font_size</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">set_fontsize</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span>  
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Akurasi Model Klasifikasi&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9012a76a9c653390c3a8dfe28a6458179cfdb97074644f42415f99db209282b4.png" src="_images/9012a76a9c653390c3a8dfe28a6458179cfdb97074644f42415f99db209282b4.png" />
+</div>
+</div>
+<p>Setelah melakukan analisis terhadap dataset tersebut, dapat disimpulkan bahwa  model yang terbaik adalah Dipilih random forest. Dengan menggunakan Library sebagai Model Classifier untuk Deployement aplikasi</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deployement">
+<h1>DEPLOYEMENT<a class="headerlink" href="#deployement" title="Link to this heading">#</a></h1>
+<p>MENGAMBIL MODEL TERBAIK KE FILE JOBLIB</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">rf_clf</span><span class="p">,</span> <span class="s1">&#39;RF_model.joblib&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;RF_model.joblib&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="website-hasil">
+<h1>WEBSITE HASIL<a class="headerlink" href="#website-hasil" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://huggingface.co/spaces/NikiRaihan/PSD-Klasifikasi-udara-jogja">https://huggingface.co/spaces/NikiRaihan/PSD-Klasifikasi-udara-jogja</a></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="UAS2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ELECTRIC POWER CONSUMPTION</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AIR QUALITY IN YOGYAKARTA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk">TUJUAN ANALISIS: KLASIFIKASI KUALITAS UDARA DI YOGYAKARTA BAGUS ATAU BURUK</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">DATA UNDERSTANDING (MEMAHAMI DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-from-web-to-dataframe">Collecting data from web to dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview-identifikasi-data">Data Overview (Identifikasi Data)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value">Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-tetangga-terdekat-k-nearest-neighbors-k-nn">1. K-Tetangga Terdekat (K-Nearest Neighbors, K-NN)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jarak-jangkauan-reachability-distance">2. Jarak Jangkauan (Reachability Distance)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kepadatan-jangkauan-lokal-local-reachability-density">3. Kepadatan Jangkauan Lokal (Local Reachability Density)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#faktor-outlier-lokal-local-outlier-factor">4. Faktor Outlier Lokal (Local Outlier Factor)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing-preproses-data">DATA PREPROCESSING (PREPROSES DATA)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-missing-value">Mengatasi Missing Value</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">DATA MODELLING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-klasifikasi-data">Apa itu Klasifikasi data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-train-dan-data-test">Data Train dan Data Test</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-model-gaussian-naive-bayes-dengan-code-python">Membuat Model Model Gaussian Naive Bayes dengan Code Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-k-nearest-neighbors-knn-dengan-code-python">Membuat Model K-Nearest Neighbors (KNN) dengan Code Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest-classifier">Random Forest Classifier</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">KESIMPULAN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployement">DEPLOYEMENT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#website-hasil">WEBSITE HASIL</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Niki Raihan Laili
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
