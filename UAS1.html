@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -187,6 +187,7 @@
 
 
 
+
 <li class="toctree-l1"><a class="reference internal" href="UAS2.html">ELECTRIC POWER CONSUMPTION</a></li>
 
 
@@ -194,8 +195,8 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="UAS3.html">ANALYSIS FOR WHETHER DATASET</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="UAS3.html">ANALYSIS FOR WHETHER DATASET</a></li>
 
 
 
@@ -399,6 +400,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AIR QUALITY IN YOGYAKARTA</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk">TUJUAN ANALISIS: KLASIFIKASI KUALITAS UDARA DI YOGYAKARTA BAGUS ATAU BURUK</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bisnis-understanding">BISNIS UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">1. Latar Belakang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">2. Rumusan Masalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">3. Tujuan</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">DATA UNDERSTANDING (MEMAHAMI DATA)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-from-web-to-dataframe">Collecting data from web to dataframe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview-identifikasi-data">Data Overview (Identifikasi Data)</a><ul class="nav section-nav flex-column">
@@ -448,7 +455,29 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk">
 <h1>TUJUAN ANALISIS: KLASIFIKASI KUALITAS UDARA DI YOGYAKARTA BAGUS ATAU BURUK<a class="headerlink" href="#tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk" title="Link to this heading">#</a></h1>
 <p>Mendiagnosa tingkat Kualitas udara di Yogyakarta dengan menggunakan AQY dataset from Kaggle dataset (<a class="reference external" href="https://www.kaggle.com/datasets/adhang/air-quality-in-yogyakarta-indonesia-2021/data?select=psi-jogja-jan-2021.csv">https://www.kaggle.com/datasets/adhang/air-quality-in-yogyakarta-indonesia-2021/data?select=psi-jogja-jan-2021.csv</a>)</p>
-<p>Sekarang kualitas udara di seluruh dunia akan memburuk jika kita tidak menjaga lingkuang dengan benar, karena jika udara semakin memburuk akan menyebabkan masalah pernapasan yang serius bagi orang tua, orang penyakit paru-paru terutama di daerah perkotaan dan sering macet dengan padatnya transformasi kendaraan.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="bisnis-understanding">
+<h1>BISNIS UNDERSTANDING<a class="headerlink" href="#bisnis-understanding" title="Link to this heading">#</a></h1>
+<section id="latar-belakang">
+<h2>1. Latar Belakang<a class="headerlink" href="#latar-belakang" title="Link to this heading">#</a></h2>
+<p>Menciptakan lingkungan yang sehat dan meningkatkan kualitas hidup masyarakat adalah kualitas udara yang baik. Polusi udara di Yogyakarta dapat dipengaruhi oleh pertumbuhan penduduk, aktivitas industri dan konstruksi, peningkatan jumlah kendaraan bermotor, dan faktor alam seperti angin dan kelembaban. Polusi udara di Yogyakarta tidak hanya berdampak pada kesehatan masyarakat, seperti risiko penyakit pernapasan dan penyakit kardiovaskular, tetapi juga berdampak pada sektor ekonomi dan pariwisata, karena Yogyakarta sangat terkenal sebagai tempat wisata budaya dan pendidikan. Sekarang kualitas udara di seluruh dunia akan memburuk jika kita tidak menjaga lingkuang dengan benar, karena jika udara semakin memburuk akan menyebabkan masalah pernapasan yang serius bagi orang tua, orang penyakit paru-paru terutama di daerah perkotaan dan sering macet dengan padatnya transformasi kendaraan.</p>
+<p>Untuk mengetahui status kualitas udara dengan cepat dan tepat sangat penting bagi pemerintah daerah, lembaga lingkungan hidup, industri, dan masyarakat umum. Ketika kualitas udara dapat diklasifikasikan menjadi “Bagus” atau “Buruk”, para pemangku kepentingan dapat mengambil tindakan preventif dan reaktif. Misalnya, pemerintah dapat memberikan peringatan kepada warga, membuat kebijakan untuk mengurangi polusi, dan mendorong penggunaan transportasi hijau. Informasi ini dapat membantu industri dan pengusaha pariwisata dalam mengelola operasional dan pelayanan yang lebih baik.</p>
+<p>Saat ini, kami dapat membangun model klasifikasi kualitas udara secara otomatis dengan menggunakan data dari sensor kualitas udara (seperti PM2.5, PM10, CO, NO2, dan O3), data cuaca, dan variabel lainnya. Diharapkan metode ini akan membuat pemantauan kualitas udara lebih mudah, menilai lebih akurat, dan membantu membuat keputusan.</p>
+</section>
+<section id="rumusan-masalah">
+<h2>2. Rumusan Masalah<a class="headerlink" href="#rumusan-masalah" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Bagaimana membangun model klasifikasi yang dapat secara akurat membedakan kualitas udara di Yogyakarta menjadi “Bagus” atau “Buruk” berdasarkan data historis polusi</p></li>
+<li><p>Sejauh mana faktor-faktor seperti konsentrasi polutan tertentu, kondisi cuaca, dan aktivitas manusia mempengaruhi kualitas udara?</p></li>
+</ul>
+</section>
+<section id="tujuan">
+<h2>3. Tujuan<a class="headerlink" href="#tujuan" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Mengembangkan model klasifikasi berbasis data yang dapat memprediksi kualitas udara saat ini atau pada periode tertentu.</p></li>
+<li><p>Meningkatkan kemampuan deteksi dini kondisi buruk kualitas udara, sehingga tindakan pencegahan</p></li>
+</ul>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="data-understanding-memahami-data">
 <h1>DATA UNDERSTANDING (MEMAHAMI DATA)<a class="headerlink" href="#data-understanding-memahami-data" title="Link to this heading">#</a></h1>
@@ -770,7 +799,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/84cc37458fdf5b0546081be3ed519e12fc1899633b499af58a434ff3a9c7d817.png" src="_images/84cc37458fdf5b0546081be3ed519e12fc1899633b499af58a434ff3a9c7d817.png" />
+<img alt="_images/8a0739a0cedfac2c2d917b8c92db9ea28512ebdf98b8c6cd71b73fa1e67daa6b.png" src="_images/8a0739a0cedfac2c2d917b8c92db9ea28512ebdf98b8c6cd71b73fa1e67daa6b.png" />
 </div>
 </div>
 </section>
@@ -1289,7 +1318,7 @@ LOF_k(o) = \frac{\sum_{o' \in N_k(o)} \frac{lrd_k(o')}{lrd_k(o)}}{|N_k(o)|}
 [4344 rows x 13 columns]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Temp\ipykernel_1616\1870272509.py:1: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NikiR\AppData\Local\Temp\ipykernel_10632\1870272509.py:1: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
   df_main = df_main.interpolate()
 </pre></div>
 </div>
@@ -2684,6 +2713,12 @@ Akurasi Random Forest: 97.70%
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AIR QUALITY IN YOGYAKARTA</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-klasifikasi-kualitas-udara-di-yogyakarta-bagus-atau-buruk">TUJUAN ANALISIS: KLASIFIKASI KUALITAS UDARA DI YOGYAKARTA BAGUS ATAU BURUK</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bisnis-understanding">BISNIS UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">1. Latar Belakang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">2. Rumusan Masalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">3. Tujuan</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">DATA UNDERSTANDING (MEMAHAMI DATA)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-from-web-to-dataframe">Collecting data from web to dataframe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview-identifikasi-data">Data Overview (Identifikasi Data)</a><ul class="nav section-nav flex-column">
